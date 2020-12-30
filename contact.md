@@ -8,7 +8,7 @@ Feel free to send me your suggestions, queries or any message regarding topics t
 I seldom use social media so my reply might get delayed if you contact me through LinkedIn.
 
 ## PGP encryption for email (optional)
-Below is my public key. If you wish to send an encrypted message, use this. Make sure to send me your public key else I will not be able to reply. Copy and save my public key to a file, say `ashish`, launch a terminal and run `gpg --import ashish` (or whichever is equivalent for your system).
+Below is my public key. If you wish to send an encrypted message, use this. Make sure to send me your public key else I will not be able to reply. Copy and save my public key to a file, say `demo`, launch a terminal and run `gpg --import demo` (or whichever is equivalent for your system).
 
 ```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
