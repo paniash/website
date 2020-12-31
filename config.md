@@ -26,3 +26,19 @@ For instance:
 -->
 \newcommand{\R}{\mathbb R}
 \newcommand{\scal}[1]{\langle #1 \rangle}
+
+\newcommand{\pycode}[2]{
+```julia:!#1
+#hideall
+using PyCall
+lines = replace("""!#2""", r"(^|\n)([^\n]+)\n?$" => s"\1res = \2")
+py"""
+$$lines
+"""
+println(py"res")
+```
+```python
+#2
+```
+\codeoutput{!#1}
+}
