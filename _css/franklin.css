@@ -4,7 +4,7 @@
 
 :root {
   --block-background: #1C1E1F;
-  --small: 14px;
+  --small: 10px;
   --normal: 19px;
   --text-color: hsv(0, 0%, 20%);
 }
@@ -307,7 +307,7 @@ code {
 
 .hljs {
   font-size: var(--small);
-  line-height: 1.35em;
+  line-height: 1.85em;
   border-radius: 10px;
 }
 
