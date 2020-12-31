@@ -2,6 +2,7 @@
 @def published = "20 July 2020"
 @def rss_pubdate = Date(2020, 7, 20)
 @def rss_description = "This blog post is about cryptography"
+@def title = "Crypto intro"
 
 
 ## What is cryptography?

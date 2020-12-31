@@ -1,3 +1,5 @@
+@def title = "Ashish's blog"
+
 Hello there!
 
 I'm Ashish Panigrahi, a 3rd year physics major studying under the Integrated Master's programme at the [National Institute of Science Education and Research, Bhubaneswar, India](https://www.niser.ac.in). I am interested in quantum physics with its application in algorithms and error-mitigation for [NISQ](https://arxiv.org/abs/1801.00862) devices and beyond.
