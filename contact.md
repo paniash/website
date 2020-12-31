@@ -1,7 +1,15 @@
 # Contact
 
+~~~
+<span class="lesser-height">
+~~~
+
 - Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in)
 - [LinkedIn](https://www.linkedin.com/in/ashish-panigrahi99)
+
+~~~
+</span>
+~~~
 
 Feel free to send me your suggestions, queries or any message regarding topics that relate to me. I normally reply within 48 hours if not sooner through email.
 
