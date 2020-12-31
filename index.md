@@ -19,9 +19,9 @@ The thoughts that I present in my blog are truly my own and do **not** represent
 
 Thoughts on physics, society and technology.
 
-- [The no-cloning theorem](/blog/no-cloning-theorem/)
+- [A primer to the no-cloning theorem](/blog/no-cloning-theorem/)
 - [Philosophy behind this website](/blog/webpage/)
-- [Introduction to cryptography](/blog/cryptography-intro/)
+- [A layman's intro to cryptography](/blog/cryptography-intro/)
 
 ~~~
 </span>
