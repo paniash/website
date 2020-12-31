@@ -93,6 +93,11 @@ html {
   line-height: 1.35em;
 }
 
+/* Custom line height adjuster */
+.lesser-height {
+    line-height: 0.8em;
+}
+
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
