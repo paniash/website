@@ -15,11 +15,11 @@ The thoughts that I present in my blog are truly my own and do **not** represent
 
 ## Blog
 
+Thoughts on physics, society and technology.
+
 ~~~
 <span class="lesser-height">
 ~~~
-
-Thoughts on physics, society and technology.
 
 - [A primer to the no-cloning theorem](/blog/no-cloning-theorem/)
 - [A layman's intro to cryptography](/blog/cryptography-intro/)
