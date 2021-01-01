@@ -1,3 +1,5 @@
+@def title: "Philosophy"
+
 ## Why doesn't this website have fancy colors and animations?
 
 I prefer keeping things at a necessary minimum. Why should a website in the first place, have fancy animations and colors when just a message needs to get across? Such an ideology is suitable only for marketing and advertising sites where the appeal factor is used in luring customers. In my opinion, any other kind of website should be as minimal as possible.
