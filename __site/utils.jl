@@ -15,40 +15,56 @@ function lx_baz(com, _)
   return uppercase(brace_content)
 end
 
+function hfun_timestamp_now()
+    return string(Dates.now()) * "+00:00"
+end
+
+"""
+    {{blogposts}}
+Plug in the list of blog posts contained in the `/posts` folder.
+Souce: <https://github.com/abhishalya/abhishalya.github.io>.
+"""
 function hfun_blogposts()
-    curyear = year(Dates.today())
-    io = IOBuffer()
-    for year in curyear:-1:2020
-        ys = "$year"
-        year < curyear && write(io, "\n**$year**\n")
-        for month in 12:-1:1
-            ms = "0"^(month < 10) * "$month"
-            base = joinpath("blog", ys, ms)
-            isdir(base) || continue
-            posts = filter!(p -> endswith(p, ".md"), readdir(base))
-            days  = zeros(Int, length(posts))
-            lines = Vector{String}(undef, length(posts))
-            for (i, post) in enumerate(posts)
-                ps  = splitext(post)[1]
-                url = "/blog/$ps/"
-                surl = strip(url, '/')
-                title = pagevar(surl, :title)
-                pubdate = pagevar(surl, :published)
-                if isnothing(pubdate)
-                    date    = "$ys-$ms-01"
-                    days[i] = 1
-                else
-                    date    = Date(pubdate, dateformat"d U Y")
-                    days[i] = day(date)
-                end
-                lines[i] = "\n[$title]($url) $date \n"
-            end
-            # sort by day
-            foreach(line -> write(io, line), lines[sortperm(days, rev=true)])
+    today = Dates.today()
+    curyear = year(today)
+    curmonth = month(today)
+    curday = day(today)
+
+    list = readdir("blog")
+    filter!(endswith(".md"), list)
+    function sorter(p)
+        ps  = splitext(p)[1]
+        url = "/blog/$ps/"
+        surl = strip(url, '/')
+        pubdate = pagevar(surl, :published)
+        if isnothing(pubdate)
+            return Date(Dates.unix2datetime(stat(surl * ".md").ctime))
         end
+        return Date(pubdate, dateformat"d U Y")
     end
-    # markdown conversion adds `<p>` beginning and end but
-    # we want to  avoid this to avoid an empty separator
-    r = Franklin.fd2html(String(take!(io)), internal=true)
-    return r
+    sort!(list, by=sorter, rev=true)
+
+    io = IOBuffer()
+    write(io, """<ul class="blog-posts">""")
+    for (i, post) in enumerate(list)
+        if post == "index.md"
+            continue
+        end
+        ps  = splitext(post)[1]
+        write(io, "<li><span><i>")
+        url = "/blog/$ps/"
+        surl = strip(url, '/')
+        title = pagevar(surl, :title)
+        pubdate = pagevar(surl, :published)
+        description = pagevar(surl, :description)
+        if isnothing(pubdate)
+            date = "$curyear-$curmonth-$curday"
+        else
+            date = Date(pubdate, dateformat"d U Y")
+        end
+        write(io, """$date</i></span><b><a href="$url">$title</a></b>""")
+        write(io, """<li><i class="description">$description</i></li>""")
+    end
+    write(io, "</ul>")
+    return String(take!(io))
 end
