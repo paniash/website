@@ -53,7 +53,7 @@ PaJgGuURVy/RK6Nx708bHRPulKrrbR1+k0aDAs1V252TzSU+6LAAeX2AVGva/KQD
 ```
 
 ### Note:
-This key expires on 16th January, 2021.
+This key expires on 13th March, 2022. (Last expired on 16th January 2021 and later renewed).
 
 ## Subscription
 If you wish to subscribe to my blog, do so through RSS feeds. I have taken a minimalist approach to using this website and as such don't use any form of comments framework. Read [here](/blog/webpage) to know why.
