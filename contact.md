@@ -4,16 +4,13 @@
 <span class="lesser-height">
 ~~~
 
-- Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in)
-- [LinkedIn](https://www.linkedin.com/in/ashish-panigrahi99)
+- Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in), [ashish.panigrahi@protonmail.com](mailto:ashish.panigrahi@protonmail.com)
 
 ~~~
 </span>
 ~~~
 
 Feel free to send me your suggestions, queries or any message regarding topics that relate to me. I normally reply within 48 hours if not sooner through email.
-
-I seldom use social media so my reply might get delayed if you contact me through LinkedIn.
 
 ## PGP encryption for email (optional)
 Below is my public key. If you wish to send an encrypted message, use this. Make sure to send me your public key else I will not be able to reply. Copy and save my public key to a file, say `demo`, launch a terminal and run `gpg --import demo` (or whichever is equivalent for your system).

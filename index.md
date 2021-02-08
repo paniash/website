@@ -1,4 +1,4 @@
-@def title = "Ashish's blog"
+@def title = "Ashish Panigrahi"
 
 Hello there!
 
