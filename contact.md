@@ -4,7 +4,7 @@
 <span class="lesser-height">
 ~~~
 
-- Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in), [ashish.panigrahi@protonmail.com](mailto:ashish.panigrahi@protonmail.com)
+- Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in)
 
 ~~~
 </span>
