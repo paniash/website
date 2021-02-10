@@ -5,6 +5,7 @@
 ~~~
 
 - Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in)
+- Personal: [ashish.panigrahi@protonmail.com](mailto:ashish.panigrahi@protonmail.com)
 
 ~~~
 </span>
