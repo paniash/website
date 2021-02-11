@@ -2,7 +2,7 @@
 
 Hello there!
 
-I'm Ashish Panigrahi, a 3rd year physics major studying under the Integrated Master's programme at the [National Institute of Science Education and Research, Bhubaneswar, India](https://www.niser.ac.in). I am interested in quantum physics with its application in algorithms and error-mitigation for [NISQ](https://arxiv.org/abs/1801.00862) devices and beyond.
+My name is Ashish Panigrahi. I'm a 3rd year physics major studying under the Integrated Master's programme at the [National Institute of Science Education and Research, Bhubaneswar, India](https://www.niser.ac.in). My interests lie in the realm of quantum physics with its application in algorithms and error-mitigation for [NISQ](https://arxiv.org/abs/1801.00862) devices and beyond.
 
 I like to learn and tinker with software and occasionally write [code](https://github.com/paniash) (in Python and C) during my leisure hours. I am a strong proponent of GNU/Linux, using free (as in freedom), open-source and privacy-respecting software over proprietary ones by Microsoft, Google and other tech giants.
 
