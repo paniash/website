@@ -22,8 +22,14 @@ body {
 html {
   font-family: Helvetica, Arial, sans-serif;
   /* font-size: var(--normal); */
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-color);
+}
+
+/* For inserting snippets of smaller size text */
+.smol {
+    font-size: 16px;
+    color: var(--text-color);
 }
 
 /* ==================================================================
@@ -292,7 +298,7 @@ code {
   background-color: #1C1E1F;
   padding: 0.1em 0.2em;
   border-radius: 2px;
-  font-size: medium;
+  font-size: normal;
 }
 
 /* .franklin-content code { */
