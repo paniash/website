@@ -300,7 +300,7 @@ code {
   background-color: #1C1E1F;
   padding: 0.1em 0.2em;
   border-radius: 2px;
-  font-size: normal;
+  font-size: 18px;
 }
 
 /* .franklin-content code { */
@@ -314,8 +314,9 @@ code {
 /* font-size: 90%; } */
 
 .hljs {
-  font-size: var(--small);
-  line-height: 1.85em;
+  /* font-size: var(--small); */
+  font-size: 18px;
+  line-height: 1.45em;
   border-radius: 10px;
 }
 
