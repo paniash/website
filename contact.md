@@ -14,7 +14,9 @@
 Feel free to send me your suggestions, queries or any message regarding topics that relate to me. I normally reply within 48 hours if not sooner through email.
 
 ## PGP encryption for email (optional)
-Below is my public key. If you wish to send an encrypted message, use this. Make sure to send me your public key else I will not be able to reply. Copy and save my public key to a file, say `demo`, launch a terminal and run `gpg --import demo` (or whichever is equivalent for your system).
+Below is my public key. If you wish to send an encrypted message, use this. Copy and save my public key to a file, say `demo`, launch a terminal and run `gpg --import demo` (or whichever is equivalent for your system).
+
+> Make sure to **send me your public key** else I will not be able to reply.
 
 ```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -50,8 +52,11 @@ PaJgGuURVy/RK6Nx708bHRPulKrrbR1+k0aDAs1V252TzSU+6LAAeX2AVGva/KQD
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-### Note:
-This key expires on 13th March, 2022. (Last expired on 16th January 2021 and later renewed).
+> This key expires on 13th March, 2022. (Last expired on 16th January 2021 and later renewed).
+
+
+> I highly recommend learning and using encryption in your email communications. You don't have to be a tech guru to implement it. Make it a default method with your frequent contacts. Read this excellent guide on [email self-defence](https://emailselfdefense.fsf.org/en/) by the Free Software Foundation.
+
 
 ## Subscription
-If you wish to subscribe to my blog, do so through RSS feeds. I have taken a minimalist approach to using this website and as such don't use any form of comments framework. Read [here](/blog/webpage) to know why.
+If you wish to subscribe to my blog, do so through RSS feeds. I have taken a minimalist approach to using this website and as such don't use any form of comments framework. No ads, no tracking. Read [here](/blog/webpage) to know why.
