@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://ashishpanigrahi.me/blog/cryptography-intro/index.html</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://ashishpanigrahi.me/blog/why-privacy-matters/index.html</loc>
     <lastmod>2021-02-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -26,8 +20,14 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://ashishpanigrahi.me/blog/no-cloning-theorem/index.html</loc>
+    <loc>https://ashishpanigrahi.me/blog/2020-07-26-no-cloning-theorem/index.html</loc>
     <lastmod>2021-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://ashishpanigrahi.me/blog/2021-04-01-measuring-different-basis/index.html</loc>
+    <lastmod>2021-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -40,6 +40,12 @@
 <url>
     <loc>https://ashishpanigrahi.me/contact/index.html</loc>
     <lastmod>2021-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://ashishpanigrahi.me/blog/2020-07-20-cryptography-intro/index.html</loc>
+    <lastmod>2020-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>

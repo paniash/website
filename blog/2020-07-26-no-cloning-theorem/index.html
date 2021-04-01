@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/basic.css">
+  <link rel="icon" href="/assets/favicon.png">
+   <title>No Cloning Theorem</title>  
+</head>
+<body>
+  <header>
+<div class="blog-name"><a href="">Ashish's musings</a></div>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="https://github.com/paniash">Github</a></li>
+    <li><a href="/contact/">Contact</a></li>
+    <li><a href="/feed.xml">RSS</a></li>
+  </ul>
+  <img src="/assets/hamburger.svg" id="menu-icon">
+</nav>
+</header>
+
+
+<!-- Content appended here -->
+<div class="franklin-content"><h2 id="prerequisites"><a href="#prerequisites" class="header-anchor">Prerequisites</a></h2>
+<h3 id="unitary_transform"><a href="#unitary_transform" class="header-anchor"><em>Unitary transform:</em></a></h3>
+<p>An operator \(U\) is unitary if</p>
+\[
+U U^\dagger = U^\dagger U = I
+\]
+<p>where \(U^\dagger\) is the complex conjugate &#40;interchange rows &amp; columns and replace \(i\) with \(-i\)&#41; of \(U\).</p>
+<h3 id="tensor_product"><a href="#tensor_product" class="header-anchor"><em>Tensor product:</em></a></h3>
+<p>Let there be 2 matrices \(A\) and \(B\) where</p>
+\[
+A =
+\begin{pmatrix}
+a_{00} & a_{01} \\
+a_{10} & a_{11} \\
+\end{pmatrix}
+\]
+\[
+B =
+\begin{pmatrix}
+b_{00} & b_{01} \\
+b_{10} & b_{11} \\
+\end{pmatrix}
+\]
+<p>The tensor product of \(A\) and \(B\) is represented as \(A \otimes B\) and is evaluated as</p>
+\[
+A \otimes B =
+\begin{pmatrix}
+a_{00} \cdot
+\begin{pmatrix}
+b_{00} & b_{01} \\
+b_{10} & b_{11} \\
+\end{pmatrix}
+&
+a_{01} \cdot
+\begin{pmatrix}
+b_{00} & b_{01} \\
+b_{10} & b_{11} \\
+\end{pmatrix}
+\\
+a_{10} \cdot
+\begin{pmatrix}
+b_{00} & b_{01} \\
+b_{10} & b_{11} \\
+\end{pmatrix}
+&
+a_{11} \cdot
+\begin{pmatrix}
+b_{00} & b_{01} \\
+b_{10} & b_{11} \\
+\end{pmatrix}
+\\
+\end{pmatrix}
+\]
+<h4 id="disclaimer"><a href="#disclaimer" class="header-anchor">Disclaimer</a></h4>
+<p>I have used the term unitary transform and unitary operation interchangeably &#40;since they mean the same thing&#41;.</p>
+<h2 id="introduction"><a href="#introduction" class="header-anchor">Introduction</a></h2>
+<p>Given a quantum state \(\left| \psi \right> = \alpha \left| 0 \right> + \beta \left| 1 \right>\) with unknown complex coefficients \(\alpha\) and \(\beta\), is it possible to replicate the state onto another qubit? In other words, is it possible to go from \(\left| \psi \right>\) to \(\left| \psi \right> \otimes \left| \psi \right>\)? Let us form a hypothesis.</p>
+<h3 id="hypothesis"><a href="#hypothesis" class="header-anchor"><em>Hypothesis:</em></a></h3>
+<p>Given an unknown quantum state \(\left| \psi \right>\), there exists a unitary transform \(U\) such that it replicates the state \(\left| \psi \right>\) to \(\left| \psi \right> \otimes \left| \psi \right>\).</p>
+<p>From the postulates of quantum mechanics, any transformation of a quantum system must be unitary. Hence, we are trying to look for a unitary operation \(U\) to make the following transform:</p>
+\[
+U \left| \psi \right> \otimes \left| 0 \right> = \left| \psi \right> \otimes \left| \psi \right>
+\]
+<p>Here the inputs are \(\left| \psi \right>\) and an ancilla qubit &#40;in our case \(\left | 0 \right>\)&#41;.</p>
+<p>The no cloning theorem tells us that such a unitary transform does not exist. Let us see how this is true, algebraically. We will do this by disproving the hypothesis. Let us look at the cases when \(\left| \psi \right> = \left| 0 \right>\) and when \(\left| \psi \right> = \left| 1 \right>\). On applying the operation \(U\), the 2-qubit state becomes,</p>
+\[
+\left| 0 \right> \otimes \left| 0 \right> = \left| 00 \right> \xrightarrow[]{U} \left| 00 \right>
+\]
+\[
+\left| 1 \right> \otimes \left| 0 \right> = \left| 10 \right> \xrightarrow[]{U} \left| 11 \right>
+\]
+<p>Now let us apply \(U\) to the original state \(\left| \psi \right> (= \alpha \left| 0 \right> + \beta \left| 1 \right>)\) based on the above transformations.</p>
+\[
+(\alpha \left| 0 \right> + \beta \left| 1 \right>) \otimes \left| 0 \right> = \alpha \left| 00 \right> + \beta \left| 10 \right> \xrightarrow[]{U} \alpha U \left| 00 \right> + \beta U \left| 10 \right> = \alpha \left| 00 \right> + \beta \left| 11 \right>
+\]
+<p>Based on our original hypothesis, the output is</p>
+\[
+(\alpha \left| 0 \right> + \beta \left| 1 \right>) \otimes (\alpha \left| 0 \right> + \beta \left| 1 \right>) = \alpha ^2 \left| 00 \right> + \alpha \beta \left| 01 \right> + \beta \alpha \left| 10 \right> + \beta ^2 \left| 11 \right>
+\]
+<p>In matrix notation this looks like</p>
+\[
+\begin{pmatrix}
+\alpha ^2 \\
+\alpha \beta \\
+\beta \alpha \\
+\beta ^2 \\
+\end{pmatrix}
+=
+U
+\begin{pmatrix}
+\alpha \\
+0 \\
+\beta \\
+0 \\
+\end{pmatrix}
+\]
+<p>Now comparing the coefficients of the output states, such a case is only possible if \(\alpha = 1\) or \(\beta = 1\). This disproves the hypothesis, hence proving the no cloning theorem.</p>
+<h2 id="references"><a href="#references" class="header-anchor">References</a></h2>
+<ol>
+<li><p><a href="https://www.youtube.com/watch?v&#61;1X7CDd1lvR0&amp;list&#61;PLXEJgM3ycgQW5ysL69uaEdPoof4it6seB">Quantum Computing lectures by Dr. Umesh Vazirani</a></p>
+</li>
+<li><p>Principles of Quantum Mechanics - Shankar</p>
+</li>
+<li><p>Quantum Computation and quantum information - Nielsen &amp; Chuang</p>
+</li>
+</ol>
+<div class="page-foot">
+  <div class="copyright">
+    <!-- &copy; {{ fill author }}. {{isnotpage /tag/*}}Last modified: {{ fill fd_mtime }}.{{end}} Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. -->
+    <br>
+        Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    </br>
+    Copyright &copy; 2020-2021 Ashish Panigrahi
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+  </body>
+</html>
