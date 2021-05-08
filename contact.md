@@ -57,6 +57,8 @@ PaJgGuURVy/RK6Nx708bHRPulKrrbR1+k0aDAs1V252TzSU+6LAAeX2AVGva/KQD
 
 > I highly recommend learning and using encryption in your email communications. You don't have to be a tech guru to implement it. Make it a default method with your frequent contacts. Read this excellent guide on [email self-defence](https://emailselfdefense.fsf.org/en/) by the Free Software Foundation.
 
+You can also find me on [Github](https://github.com/paniash).
+
 
 ## Subscription
 If you wish to subscribe to my blog, do so through RSS feeds. I have taken a minimalist approach to using this website and as such don't use any form of comments framework. No ads, no tracking. Read [here](/blog/webpage) to know why.
