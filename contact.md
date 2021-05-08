@@ -13,6 +13,8 @@
 
 Feel free to send me your suggestions, queries or any message regarding topics that relate to me. I normally reply within 48 hours if not sooner through email.
 
+You can also find me on [Github](https://github.com/paniash).
+
 ## PGP encryption for email (optional)
 Below is my public key. If you wish to send an encrypted message, use this. Copy and save my public key to a file, say `demo`, launch a terminal and run `gpg --import demo` (or whichever is equivalent for your system).
 
@@ -56,8 +58,6 @@ PaJgGuURVy/RK6Nx708bHRPulKrrbR1+k0aDAs1V252TzSU+6LAAeX2AVGva/KQD
 
 
 > I highly recommend learning and using encryption in your email communications. You don't have to be a tech guru to implement it. Make it a default method with your frequent contacts. Read this excellent guide on [email self-defence](https://emailselfdefense.fsf.org/en/) by the Free Software Foundation.
-
-You can also find me on [Github](https://github.com/paniash).
 
 
 ## Subscription
