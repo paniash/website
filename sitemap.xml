@@ -15,7 +15,7 @@
 </url>
 <url>
     <loc>https://ashishpanigrahi.me/index.html</loc>
-    <lastmod>2021-03-27</lastmod>
+    <lastmod>2021-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -28,6 +28,12 @@
 <url>
     <loc>https://ashishpanigrahi.me/blog/2021-04-01-measuring-different-basis/index.html</loc>
     <lastmod>2021-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://ashishpanigrahi.me/blog/2021-05-30-firefox-fonts/index.html</loc>
+    <lastmod>2021-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
