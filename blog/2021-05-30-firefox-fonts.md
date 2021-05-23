@@ -53,14 +53,18 @@ The above XML file tells firefox that, "Hey! If you're trying to render Helvetic
 
 ### The result
 
-#### Daniel
+#### Daniel (before)
 
-![Old](/assets/oldfonts.png)
+@@im-small
+\fig{/assets/oldfonts.png}
+@@
 
-#### The cooler Daniel
+#### The cooler Daniel (after)
 
-![New](/assets/newfonts.png)
+@@im-small
+\fig{/assets/newfonts.png}
+@@
 
-## Parting
+## Parting ways
 
 I was really happy when I came across this fix! and I hope this has helped you as well.

@@ -77,8 +77,8 @@ html {
   font-family: Arial, serif;
   color: #a6a2a0;
   text-align: center;
-  margin-top: 3em;
-  /* border-top: 0.5px solid lightgrey; */
+  margin-top: 4em;
+  border-top: 0.5px solid lightgrey;
   padding-top: 2em;
   margin-bottom: 4em;
 }
@@ -264,6 +264,13 @@ td {
   width: 50%;
   text-align: center;
   padding-left: 20%;
+}
+
+/* For when images are just too small to see */
+.im-small img {
+    padding-left: 10%;
+    width: 85%;
+    text-align: center;
 }
 
 /* ==================================================================

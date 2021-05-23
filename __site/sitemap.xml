@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://ashishpanigrahi.me/blog/why-privacy-matters/index.html</loc>
-    <lastmod>2021-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://ashishpanigrahi.me/404/index.html</loc>
     <lastmod>2020-12-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -27,7 +21,7 @@
 </url>
 <url>
     <loc>https://ashishpanigrahi.me/blog/2021-04-01-measuring-different-basis/index.html</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2021-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -39,7 +33,7 @@
 </url>
 <url>
     <loc>https://ashishpanigrahi.me/blog/web-bloat/index.html</loc>
-    <lastmod>2021-01-01</lastmod>
+    <lastmod>2021-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
