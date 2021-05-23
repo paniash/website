@@ -1,4 +1,4 @@
-@def title: "Font rendering in firefox"
+@def title = "Font rendering in firefox"
 
 # Font rendering on firefox
 

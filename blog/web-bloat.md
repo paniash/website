@@ -1,4 +1,4 @@
-@def title: "Philosophy"
+@def title = "Philosophy"
 
 ## Why doesn't this website have fancy colors and animations?
 

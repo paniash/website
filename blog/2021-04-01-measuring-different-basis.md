@@ -1,4 +1,4 @@
-@def title: "Measuring along different bases in Qiskit"
+@def title = "Measuring along different bases in Qiskit"
 
 # Measuring along different bases
 
