@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <!-- <link rel="stylesheet" href="/libs/highlight/github.min.css"> -->
+<link rel="stylesheet" href="/libs/highlight/gruvbox-dark.min.css">
+<!-- <link rel="stylesheet" href="/libs/highlight/gml.min.css"> -->
+<!-- <link rel="stylesheet" href="/libs/highlight/hybrid.min.css"> -->
+<!-- <link rel="stylesheet" href="/libs/highlight/stackoverflow-dark.min.css"> -->
+   
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/basic.css">
+  <link rel="icon" href="/assets/favicon.png">
+   <title>Font rendering on firefox</title>  
+</head>
+<body>
+  <header>
+<div class="blog-name"><a href="">Ashish's musings</a></div>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/contact/">Contact</a></li>
+    <li><a href="/feed.xml">RSS</a></li>
+  </ul>
+  <img src="/assets/hamburger.svg" id="menu-icon">
+</nav>
+</header>
+
+
+<!-- Content appended here -->
+<div class="franklin-content"><h1 id="font_rendering_on_firefox"><a href="#font_rendering_on_firefox" class="header-anchor">Font rendering on firefox</a></h1>
+<h2 id="why_do_my_fonts_look_disgusting"><a href="#why_do_my_fonts_look_disgusting" class="header-anchor">Why do my fonts look disgusting?</a></h2>
+<p>If you&#39;re on a &#42;nix system and compared the fonts on chrome and firefox, you&#39;d notice the difference in that the fonts on the latter just looked... <em>off</em>.</p>
+<h2 id="my_personal_odyssey"><a href="#my_personal_odyssey" class="header-anchor">My personal odyssey</a></h2>
+<p>Recently I had made the switch from firefox to brave, for the naive reason that fonts were just rendered better &#40;and LaTeX looks like it&#41; on it &#40;being a chromium based browser&#41;. However, I really missed the customizability and other nifty features of firefox. It just felt like home. I knew for sure that I&#39;m missing something, because surely firefox couldn&#39;t be responsible for messing fonts, right? &#40;atleast I hoped&#41;.</p>
+<p>On firefox, you may have come across the font settings that look something like this:</p>
+<p><img src="/assets/firefox-font.png" alt="" /></p>
+<p>My past self would unselect the option <em><strong>Allow pages to choose their own fonts, instead of your selections above</strong></em>, just so that I can have my custom fonts rendered. But oh boy, would that turn out disastrous to say the least. I visit a good number of websites that render math equations in TeX, but with this setting turned off, LaTeX looked more like some flunky &#39;90s PC trying to render math.</p>
+<p>What was the fix you might ask? Well, just select the option that I had unselected earlier. But this would bring that the atrocious fonts back on many websites.</p>
+<h2 id="the_fix"><a href="#the_fix" class="header-anchor">The fix</a></h2>
+<p>I later came across <a href="https://nolanlawson.com/2020/05/02/customizing-fonts-in-firefox-on-linux/">this</a> blog post where I got to know that firefox depends on an OS-level font configuration called <a href="https://wiki.archlinux.org/title/Font_configuration">fontconfig</a> and is located at <code>~/.config/fontconfig/fonts.conf</code>.</p>
+<h3 id="create_a_fontconfig_file"><a href="#create_a_fontconfig_file" class="header-anchor">Create a fontconfig file</a></h3>
+<p>If you don&#39;t have one, just create it at the specific location.</p>
+<pre><code class="language-xml">&lt;?xml version&#61;&#39;1.0&#39;?&gt;
+&lt;&#33;DOCTYPE fontconfig SYSTEM &#39;fonts.dtd&#39;&gt;
+&lt;fontconfig&gt;
+    &lt;alias&gt;
+        &lt;family&gt;Helvetica&lt;/family&gt;
+        &lt;prefer&gt;&lt;family&gt;IBM Plex Sans&lt;/family&gt;&lt;/prefer&gt;
+    &lt;/alias&gt;
+    &lt;alias&gt;
+        &lt;family&gt;sans-serif&lt;/family&gt;
+        &lt;prefer&gt;&lt;family&gt;IBM Plex Sans&lt;/family&gt;&lt;/prefer&gt;
+    &lt;/alias&gt;
+    &lt;alias&gt;
+        &lt;family&gt;monospace&lt;/family&gt;
+        &lt;prefer&gt;&lt;family&gt;DejaVu Sans Mono&lt;/family&gt;&lt;/prefer&gt;
+    &lt;/alias&gt;
+&lt;/fontconfig&gt;</code></pre>
+<p>A lot of websites these days use Helvetica as their serif font, and firefox will fallback to a specific font if Helvetica is not found. By default, this fallback seems to be Nimbus Sans, which is not pretty to say the least. This is where fontconfig comes in.</p>
+<p>The above XML file tells firefox that, &quot;Hey&#33; If you&#39;re trying to render Helvetica, just use IBM Plex Sans&quot;, and similar font rules for sans-serif and monospace fonts.</p>
+<h3 id="the_result"><a href="#the_result" class="header-anchor">The result</a></h3>
+<h4 id="daniel"><a href="#daniel" class="header-anchor">Daniel</a></h4>
+<p><img src="/assets/oldfonts.png" alt="Old" /></p>
+<h4 id="the_cooler_daniel"><a href="#the_cooler_daniel" class="header-anchor">The cooler Daniel</a></h4>
+<p><img src="/assets/newfonts.png" alt="New" /></p>
+<h2 id="parting"><a href="#parting" class="header-anchor">Parting</a></h2>
+<p>I was really happy when I came across this fix&#33; and I hope this has helped you as well.</p>
+<div class="page-foot">
+  <div class="copyright">
+    <!-- &copy; {{ fill author }}. {{isnotpage /tag/*}}Last modified: {{ fill fd_mtime }}.{{end}} Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. -->
+    <br>
+        Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    </br>
+    Copyright &copy; 2020-2021 Ashish Panigrahi
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>

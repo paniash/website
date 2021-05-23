@@ -19,6 +19,7 @@ Thoughts on physics, society and technology.
 <span class="lesser-height">
 ~~~
 
+- [Font rendering on firefox](/blog/2021-05-30-firefox-fonts//)
 - [A primer to the no-cloning theorem](/blog/no-cloning-theorem/)
 - [A layman's intro to cryptography](/blog/cryptography-intro/)
 
