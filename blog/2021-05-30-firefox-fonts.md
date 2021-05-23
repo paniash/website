@@ -4,7 +4,7 @@
 
 ## Why do my fonts look disgusting?
 
-If you're on a \*nix system and compared the fonts on chrome and firefox, you'd notice the difference in that the fonts on the latter just looked... _off_.
+If you're on a \*nix system and compare the fonts on chrome and firefox, you'd notice the difference. The fonts on the latter just look... _off_, or atleast that was the case on my system.
 
 ## My personal odyssey
 
