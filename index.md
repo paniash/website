@@ -20,8 +20,8 @@ Thoughts on physics, society and technology.
 ~~~
 
 - [Font rendering on firefox](/blog/2021-05-30-firefox-fonts//)
-- [A primer to the no-cloning theorem](/blog/no-cloning-theorem/)
-- [A layman's intro to cryptography](/blog/cryptography-intro/)
+- [A primer to the no-cloning theorem](/blog/2020-07-26-no-cloning-theorem/)
+- [A layman's intro to cryptography](/blog/2020-07-20-cryptography-intro/)
 
 ~~~
 </span>
