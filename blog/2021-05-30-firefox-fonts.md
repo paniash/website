@@ -1,3 +1,7 @@
+@def authors = "Ashish Panigrahi"
+@def published = "30 March 2021"
+@def rss_pubdate = Date(2021, 5, 30)
+@def rss_description = "Fixing font rendering on firefox"
 @def title = "Font rendering in firefox"
 
 # Font rendering on firefox

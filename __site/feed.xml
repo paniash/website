@@ -23,6 +23,25 @@
 
 <item>
   <title>
+    <![CDATA[  Font rendering in firefox  ]]>
+  </title>
+  <link> https://ashishpanigrahi.me/blog/2021-05-30-firefox-fonts/index.html </link>
+  <guid> https://ashishpanigrahi.me/blog/2021-05-30-firefox-fonts/index.html </guid>
+  <description>
+    <![CDATA[  Fixing font rendering on firefox  ]]>
+  </description>  
+    
+  <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Ashish Panigrahi</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  No Cloning Theorem  ]]>
   </title>
   <link> https://ashishpanigrahi.me/blog/2020-07-26-no-cloning-theorem/index.html </link>
