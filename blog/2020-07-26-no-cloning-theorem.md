@@ -4,9 +4,12 @@
 @def rss_description = "A primer to no-cloning theorem"
 @def title = "No Cloning Theorem"
 
+# A primer to the no-cloning theorem
+
 ## Prerequisites
 
 ### *Unitary transform:*
+
 An operator $U$ is unitary if
 $$
 U U^\dagger = U^\dagger U = I
@@ -14,6 +17,7 @@ $$
 where $U^\dagger$ is the complex conjugate (interchange rows & columns and replace $i$ with $-i$) of $U$.
 
 ### *Tensor product:*
+
 Let there be 2 matrices $A$ and $B$ where
 $$
 A =

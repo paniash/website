@@ -4,6 +4,7 @@
 @def rss_description = "This blog post is about cryptography"
 @def title = "Crypto intro"
 
+# A layman's intro to cryptography
 
 ## What is cryptography?
 We have all heard fancy jargon like "encryption", "cryptography" and what not, but what do these terms actually mean? In this article, I attempt to give you a brief introduction to the world of cryptography and how in particular, public-key cryptography, a popular means of encryption works.
