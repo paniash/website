@@ -14,7 +14,7 @@
 
 Feel free to send me your suggestions, queries or any message regarding topics that relate to me. I normally reply within 48 hours if not sooner through email.
 
-You can also find me on [Github](https://github.com/paniash).
+You can also find me on [GitHub](https://github.com/paniash).
 
 ## PGP encryption for email (optional)
 Below is my public key. If you wish to send an encrypted message, use this. Copy and save my public key to a file, say `demo`, launch a terminal and run `gpg --import demo` (or whichever is equivalent for your system).
