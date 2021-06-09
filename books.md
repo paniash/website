@@ -1,7 +1,13 @@
 # Books
 
-## Currently reading
+## 2021
 
-- The Martian by Andy Weir
+### Currently reading
+
+- The Power of Habit by Charles Duhigg
 - Atomic Habits by James Clear
 - Eat that Frog! by Brian Tracy
+
+### Completed
+
+- The Martian by Andy Weir
