@@ -8,6 +8,8 @@ I like to read [books](books/) and occasionally write [code](https://github.com/
 
 If you have any questions, suggestions, advice or simply wish to discuss about topics that relate to me, feel free to contact me via [email](mailto:ashish.panigrahi@niser.ac.in).
 
+For academic details, see my [resume](assets/files/resume.pdf).
+
 ### *Disclaimer*
 The thoughts that I present in my blog are truly my own and do **not** represent the idealogy of the organization that I represent.
 
