@@ -6,7 +6,7 @@ This is a list of the books that is currently on my read list and the ones that 
 
 ### Current read list
 
-- Seveneves by Neal Stephenson [~~~<span style="color:red;">reading</span>~~~]
+- Dark Matter by Blake Crouch [~~~<span style="color:red;">reading</span>~~~]
 - The Power of Habit by Charles Duhigg
 - Atomic Habits by James Clear
 - Eat that Frog! by Brian Tracy
