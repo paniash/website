@@ -6,11 +6,12 @@ This is a list of the books that is currently on my read list and the ones that 
 
 ### Current read list
 
-- Dark Matter by Blake Crouch [~~~<span style="color:red;">reading</span>~~~]
+- Red Rising by Pierce Brown [~~~<span style="color:red;">reading</span>~~~]
 - The Power of Habit by Charles Duhigg
 - Atomic Habits by James Clear
 - Eat that Frog! by Brian Tracy
 
 ### Completed
 
+- Dark Matter by Blake Crouch
 - The Martian by Andy Weir
