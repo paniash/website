@@ -288,6 +288,11 @@ body { counter-reset: eqnum; }
   white-space: normal;
 }
 
+.no-number .katex-display::after {
+    counter-increment: nothing;
+    content: "";
+}
+
 /*
 .katex-display::after {
   counter-increment: eqnum;
