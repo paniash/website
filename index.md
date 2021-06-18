@@ -1,6 +1,6 @@
 @def title = "Ashish Panigrahi"
 
-Hello there! Welcome to my homepage.
+Hello there!
 
 My name is Ashish Panigrahi. I'm a 3rd year physics major studying under the Integrated Master's programme at the [National Institute of Science Education and Research, Bhubaneswar, India](https://www.niser.ac.in).
 
