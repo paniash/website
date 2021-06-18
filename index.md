@@ -17,14 +17,4 @@ The thoughts that I present in my blog are truly my own and do **not** represent
 
 Thoughts on physics, society and technology.
 
-~~~
-<span class="lesser-height">
-~~~
-
-- [Font rendering on firefox](/blog/2021-05-30-firefox-fonts//)
-- [A primer to the no-cloning theorem](/blog/2020-07-26-no-cloning-theorem/)
-- [A layman's intro to cryptography](/blog/2020-07-20-cryptography-intro/)
-
-~~~
-</span>
-~~~
+{{recentblogposts}}

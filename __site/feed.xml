@@ -42,7 +42,7 @@
 
 <item>
   <title>
-    <![CDATA[  No Cloning Theorem  ]]>
+    <![CDATA[  A primer to no-cloning theorem  ]]>
   </title>
   <link> https://ashishpanigrahi.me/blog/2020-07-26-no-cloning-theorem/index.html </link>
   <guid> https://ashishpanigrahi.me/blog/2020-07-26-no-cloning-theorem/index.html </guid>
@@ -61,12 +61,12 @@
 
 <item>
   <title>
-    <![CDATA[  Crypto intro  ]]>
+    <![CDATA[  Intro to public-key cryptography  ]]>
   </title>
   <link> https://ashishpanigrahi.me/blog/2020-07-20-cryptography-intro/index.html </link>
   <guid> https://ashishpanigrahi.me/blog/2020-07-20-cryptography-intro/index.html </guid>
   <description>
-    <![CDATA[  This blog post is about cryptography  ]]>
+    <![CDATA[  This blog post is about public-key cryptography  ]]>
   </description>  
     
   <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>  

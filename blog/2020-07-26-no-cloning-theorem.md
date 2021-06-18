@@ -2,7 +2,7 @@
 @def published = "26 July 2020"
 @def rss_pubdate = Date(2020, 7, 26)
 @def rss_description = "A primer to no-cloning theorem"
-@def title = "No Cloning Theorem"
+@def title = "A primer to no-cloning theorem"
 
 # A primer to the no-cloning theorem
 
