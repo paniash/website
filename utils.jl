@@ -23,13 +23,15 @@ function hfun_recentblogposts()
     list = readdir("blog")
     filter!(f -> endswith(f, ".md"), list)
     dates = [stat(joinpath("blog", f)).mtime for f in list]
-    perm = sortperm(dates, rev=true)
-    idxs = perm[1:min(3, length(perm))]
+    perm = sortperm(dates, rev=false)
+    idxs = perm[1:max(1, length(perm))]
     io = IOBuffer()
     write(io, "<ul>")
     for (k, i) in enumerate(idxs)
-        fi = "/blog/" * splitext(list[i])[1] * "/"
-        write(io, """<li><a href="$fi">Post $k</a></li>\n""")
+        fi = "blog/" * splitext(list[i])[1]
+        title = pagevar(fi, "title")
+        fi = "/blog/" * splitext(list[i])[1]
+        write(io, """<li><a href="$fi">$title</a></li>\n """)
     end
     write(io, "</ul>")
     return String(take!(io))
