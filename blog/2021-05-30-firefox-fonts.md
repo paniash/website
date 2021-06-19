@@ -16,7 +16,7 @@ Recently I had made the switch from firefox to brave, for the naive reason that 
 
 On firefox, you may have come across the font settings that look something like this:
 
-![](/assets/firefox-font.png)
+![](/assets/images/firefox-font.png)
 
 My past self would unselect the option _**Allow pages to choose their own fonts, instead of your selections above**_, just so that I can have my custom fonts rendered. But oh boy, would that turn out disastrous to say the least. I visit a good number of websites that render math equations in TeX, but with this setting turned off, LaTeX looked more like some flunky '90s PC trying to render math.
 
@@ -60,13 +60,13 @@ The above XML file tells firefox that, "Hey! If you're trying to render Helvetic
 #### Daniel (before)
 
 @@im-small
-\fig{/assets/oldfonts.png}
+\fig{/assets/images/oldfonts.png}
 @@
 
 #### The cooler Daniel (after)
 
 @@im-small
-\fig{/assets/newfonts.png}
+\fig{/assets/images/newfonts.png}
 @@
 
 ## Parting ways
