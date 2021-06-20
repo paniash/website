@@ -23,7 +23,7 @@ function hfun_recentblogposts()
     list = readdir("blog")
     filter!(f -> endswith(f, ".md"), list)
     dates = [stat(joinpath("blog", f)).mtime for f in list]
-    perm = sortperm(dates, rev=false)
+    perm = sortperm(dates, rev=true)
     idxs = perm[1:max(1, length(perm))]
     io = IOBuffer()
     write(io, "<ul>")
