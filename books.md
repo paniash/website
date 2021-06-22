@@ -6,6 +6,7 @@ This is a list of the books that is currently on my read list and the ones that 
 
 ### Current read list
 
+- Dune by Frank Herbert [~~~<span style="color:red;">reading</span>~~~]
 - Red Rising by Pierce Brown [~~~<span style="color:red;">reading</span>~~~]
 - The Power of Habit by Charles Duhigg
 - Atomic Habits by James Clear
