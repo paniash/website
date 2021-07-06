@@ -11,6 +11,7 @@ If you have any questions, suggestions, advice or simply wish to discuss about t
 For academic details, see my [resume](assets/files/resume.pdf).
 
 ### *Disclaimer*
+
 The thoughts that I present in my blog are truly my own and do **not** represent the idealogy of the organization that I represent.
 
 ## Blog
