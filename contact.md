@@ -6,7 +6,7 @@
 
 - Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in) (or) [ashish.panigrahi@protonmail.com](mailto:ashish.panigrahi@protonmail.com)
 - Matrix: [`@paniash:matrix.org`](https://matrix.to/#/@paniash:matrix.org)
-- IRC: paniash (irc.libera.chat)
+- IRC: `paniash` (irc.libera.chat)
 
 ~~~
 </span>
