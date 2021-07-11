@@ -272,7 +272,7 @@ td {
     text-align: center;
 }
 
-/* When images are too large */
+/* For crypto stuff */
 .crypto img {
     display: block;
     padding-left: 10%;
@@ -281,6 +281,27 @@ td {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Donation page */
+.donation {
+    width: 100%;
+    text-align: center;
+}
+
+.stack {
+    width: 49%;
+    padding: 1em;
+}
+
+.donation-logo img {
+    width: 20%;
+}
+
+.qrcode img {
+    display: block;
+    width: 20%;
+}
+
 
 /* ==================================================================
     KATEX
