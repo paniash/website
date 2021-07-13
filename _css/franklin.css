@@ -340,6 +340,7 @@ body { counter-reset: eqnum; }
 
 code {
   background-color: #1C1E1F;
+  color: #E94A93;
   padding: 0.1em 0.2em;
   border-radius: 2px;
   font-size: 15px;
