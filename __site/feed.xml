@@ -23,6 +23,25 @@
 
 <item>
   <title>
+    <![CDATA[  A quantum Hello world program  ]]>
+  </title>
+  <link> https://ashishpanigrahi.me/blog/2021-07-16-qiskit-hello-world/index.html </link>
+  <guid> https://ashishpanigrahi.me/blog/2021-07-16-qiskit-hello-world/index.html </guid>
+  <description>
+    <![CDATA[  Hello world program in Qiskit  ]]>
+  </description>  
+    
+  <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Ashish Panigrahi</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Font rendering in firefox  ]]>
   </title>
   <link> https://ashishpanigrahi.me/blog/2021-05-30-firefox-fonts/index.html </link>
