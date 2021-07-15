@@ -2,7 +2,7 @@
 @def published = "16 July 2021"
 @def rss_pubdate = Date(2021, 7, 16)
 @def rss_description = "Hello world program in Qiskit"
-@def title = "A quantum Hello world program"
+@def title = "Hello world in quanta"
 
 
 # Hello, world in Qiskit
