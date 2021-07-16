@@ -23,7 +23,26 @@
 
 <item>
   <title>
-    <![CDATA[  Hello world in quanta  ]]>
+    <![CDATA[  Diffie-Hellman Key Exchange Protocol  ]]>
+  </title>
+  <link> https://ashishpanigrahi.me/blog/2021-07-18-diffie-hellman/index.html </link>
+  <guid> https://ashishpanigrahi.me/blog/2021-07-18-diffie-hellman/index.html </guid>
+  <description>
+    <![CDATA[  Here, I proceed to give a novice&#39;s understanding on the Diffie-Hellman key exchange protocol  ]]>
+  </description>  
+    
+  <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Ashish Panigrahi</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
+    <![CDATA[  Hello, world in Qiskit  ]]>
   </title>
   <link> https://ashishpanigrahi.me/blog/2021-07-16-qiskit-hello-world/index.html </link>
   <guid> https://ashishpanigrahi.me/blog/2021-07-16-qiskit-hello-world/index.html </guid>

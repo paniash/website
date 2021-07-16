@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
    <!-- <link rel="stylesheet" href="/libs/highlight/github.min.css"> -->
 <link rel="stylesheet" href="/libs/highlight/gruvbox-dark.min.css">
 <!-- <link rel="stylesheet" href="/libs/highlight/gml.min.css"> -->
@@ -13,7 +14,7 @@
   <link rel="stylesheet" href="/css/franklin.css">
   <link rel="stylesheet" href="/css/basic.css">
   <link rel="icon" href="/assets/favicon.png">
-   <title>Hello world in quanta</title>  
+   <title>Hello, world in Qiskit</title>  
 </head>
 <body>
   <header>
@@ -40,9 +41,53 @@
 <h2 id="measuring_a_quantum_state"><a href="#measuring_a_quantum_state" class="header-anchor">Measuring a quantum state</a></h2>
 <p>With conventional computers, the simplest program that one could perhaps make is printing out &quot;hello, world&quot;. However, in contrast to this, in quantum systems, we go ahead and measure a quantum state &#40;this seems to be the most rudimentary but complete program in quantum terms&#41;. Let&#39;s proceed to do just that&#33;</p>
 <h3 id="defining_a_quantum_state"><a href="#defining_a_quantum_state" class="header-anchor">Defining a quantum state</a></h3>
+<p>We import the necessary modules from Qiskit for this operation. To define a quantum circuit, we require the classes <code>QuantumCircuit</code>, <code>QuantumRegister</code>, <code>ClassicalRegister</code> and define a state variable <code>psi</code> as</p>
+\[
+| \psi \rangle =
+\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}
+\]
+<p>Notice that the state \(| \psi \rangle\) is normalized. This is important, otherwise we&#39;ll end up with an error.</p>
 <pre><code class="language-python">from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister
+from math import sqrt
 
-def initialize&#40;init&#41;:</code></pre>
+# define an initial state
+psi &#61; &#91;1/sqrt&#40;2&#41;, 1/sqrt&#40;2&#41;&#93;</code></pre>
+<p>We then define a function <code>prepare&#40;&#41;</code> which takes two parameters: a <code>QuantumCircuit</code> object named <code>qc</code> and the initial state <code>psi</code>. Remember that the quantum circuit that we define, only uses 1 qubit &#40;notice the vector representation of \(| \psi \rangle\)&#41;.</p>
+<pre><code class="language-python">def prepare&#40;qc, psi&#41;:
+    qc.initialize&#40;psi, &#91;0&#93;&#41;     # &#91;0&#93; indicates the zeroth index &#40;or&#41; the first qubit</code></pre>
+<p>Python by default, calls by reference, so we don&#39;t have to worry about returning anything from <code>prepare&#40;&#41;</code>.</p>
+<h3 id="building_a_quantum_circuit"><a href="#building_a_quantum_circuit" class="header-anchor">Building a quantum circuit</a></h3>
+<p>Let&#39;s proceed with making an actual quantum circuit. For this, we define a <code>QuantumRegister</code> object <code>qr</code>, which stores the qubits and a <code>ClassicalRegister</code> object <code>cr</code> which stores the measured values of those qubits.</p>
+<pre><code class="language-python">qr &#61; QuantumRegister&#40;1&#41;
+cr &#61; ClassicalRegister&#40;1&#41;</code></pre>
+<p>Combining the two registers, we now make a quantum circuit:</p>
+<pre><code class="language-python">qc &#61; QuantumCircuit&#40;qr, cr&#41;</code></pre>
+<h3 id="initializing_and_measuring_the_qubit"><a href="#initializing_and_measuring_the_qubit" class="header-anchor">Initializing and measuring the qubit</a></h3>
+<p>We then call our function <code>prepare&#40;&#41;</code> to initialize the first qubit &#40;the only qubit&#41; of our quantum circuit <code>qc</code>.</p>
+<pre><code class="language-python">prepare&#40;qc, psi&#41;</code></pre>
+<p>How do we go about measuring our state? That&#39;s where the <code>ClassicalRegister</code> object <code>cr</code> comes in. We use the <code>measure</code> method under the <code>qc</code> object to actually measure the qubit.</p>
+<pre><code class="language-python">qc.measure&#40;qr&#91;0&#93;, cr&#91;0&#93;&#41;</code></pre>
+<p>The above syntax generally means that we&#39;re measuring the state of <code>qr&#91;0&#93;</code> &#40;the first qubit&#41; onto the classical register <code>cr&#91;0&#93;</code> where we store the measured value.</p>
+<h2 id="visualizing_the_circuit"><a href="#visualizing_the_circuit" class="header-anchor">Visualizing the circuit</a></h2>
+<p>Ok so all of this is nice, but one can only describe so much. Let&#39;s see how our circuit actually looks like after applying the above operations. For this, we use the <code>draw&#40;&#41;</code> method.</p>
+<pre><code class="language-python">&gt;&gt;&gt; qc.draw&#40;output&#61;&#39;text&#39;&#41;   # specifying the &#39;text&#39; backend</code></pre>
+<pre><code class="language-plaintext">┌─────────────────────────────┐┌─┐
+q0_0: ┤ Initialize&#40;0.70711,0.70711&#41; ├┤M├
+      └─────────────────────────────┘└╥┘
+c0: 1/════════════════════════════════╩═
+                                      0</code></pre>
+<p>For a nice looking figure, we use the <code>matplotlib</code> backend.</p>
+<pre><code class="language-python">&gt;&gt;&gt; qc.draw&#40;output&#61;&#39;mpl&#39;&#41;</code></pre>
+
+<figure style="text-align:center;">
+<img src="/assets/images/qc.png" style="padding:0; width:20em;" alt=" "/>
+<figcaption> </figcaption>
+</figure>
+
 <div class="page-foot">
   <div class="copyright">
     <br>
@@ -52,6 +97,11 @@ def initialize&#40;init&#41;:</code></pre>
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
     
     
         <script src="/libs/highlight/highlight.pack.js"></script>
