@@ -105,3 +105,7 @@ For a nice looking figure, we use the `matplotlib` backend.
 ```
 
 \figenv{}{/assets/images/qc.png}{width:20em;}
+
+## Choosing a backend for measurement
+
+To measure the qubit and store the result in the classical register `cr`, we use the `qasm_simulator` backend. As we know from basic quantum mechanics,
