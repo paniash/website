@@ -14,15 +14,15 @@
 ================================================================== */
 
 body {
-    /* background-color: #181A1B;  /1* lighter-dark *1/ */
-    background-color: #131516;  /* darker-dark */
+    background-color: #181A1B;  /* lighter-dark */
+    /* background-color: #131516;  /* darker-dark */
     color: #E8E6E3;
 }
 
 html {
   font-family: Helvetica, Arial, sans-serif;
   /* font-size: var(--normal); */
-  font-size: 17.5px;
+  font-size: 17px;
   color: var(--text-color);
 }
 
@@ -72,7 +72,7 @@ html {
 }
 
 .page-foot {
-  font-size: 90%;
+  font-size: 16px;
   font-family: Arial, serif;
   color: #a6a2a0;
   text-align: center;
@@ -106,7 +106,7 @@ html {
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
-    width: 830px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -184,6 +184,7 @@ td {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   font-style: italic;
+  opacity: 0.7;
 }
 
 .franklin-content blockquote p {

@@ -57,9 +57,9 @@ The above XML file tells firefox that, "Hey! If you're trying to render Helvetic
 
 ### The result
 
-\figenv{Daniel}{/assets/images/oldfonts.png}{width:45em;}
+\figenv{Daniel}{/assets/images/oldfonts.png}{width:40em;}
 
-\figenv{The cooler Daniel}{/assets/images/newfonts.png}{width:45em;}
+\figenv{The cooler Daniel}{/assets/images/newfonts.png}{width:40em;}
 
 ## Parting ways
 
