@@ -84,21 +84,7 @@ The above syntax generally means that we're measuring the state of `qr[0]` (the 
 
 ## Visualizing the circuit
 
-Ok so all of this is nice, but one can only describe so much. Let's see how our circuit actually looks like after applying the above operations. For this, we use the `draw()` method.
-
-```python
->>> qc.draw(output='text')   # specifying the 'text' backend
-```
-
-```plaintext
-      ┌─────────────────────────────┐┌─┐
-q0_0: ┤ Initialize(0.70711,0.70711) ├┤M├
-      └─────────────────────────────┘└╥┘
-c0: 1/════════════════════════════════╩═
-                                      0
-```
-
-For a nice looking figure, we use the `matplotlib` backend.
+Ok so all of this is nice, but one can only describe so much. Let's see how our circuit actually looks like after applying the above operations. For this, we use the `draw()` method with the `matplotlib` backend.
 
 ```python
 >>> qc.draw(output='mpl')
@@ -109,3 +95,68 @@ For a nice looking figure, we use the `matplotlib` backend.
 ## Choosing a backend for measurement
 
 To measure the qubit and store the result in the classical register `cr`, we use the `qasm_simulator` backend. As we know from basic quantum mechanics,
+
+```python
+from qiskit import Aer
+backend = Aer.get_backend('qasm_simulator')
+```
+
+We then transpile our circuit for the `qasm_simulator` backend to understand and execute the circuit.
+
+```python
+from qiskit import transpile
+qc_compiled = transpile(qc, backend)
+```
+
+Now, we simply execute the circuit and gather the measurement results.
+
+```python
+job = backend.run(qc_compiled, shots=1024)  # shots is the number of times we run the experiment
+results = job.result()
+```
+
+We store the value of the `result` object and can further access the number of times we end up with a certain value of expected outcome with the `get_counts()` method.
+
+```python
+counts = results.get_counts(qc_compiled)
+print(counts)
+```
+
+```plaintext
+{'0': 518, '1': 506}
+```
+
+Here we end up with a dictionary of key values `'0'` and `'1'`, which indicate the following quantum states:
+
+$$
+| 0 \rangle =
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
+
+\qquad
+
+| 1 \rangle =
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}
+$$
+
+As expected, we get a 50-50 distribution of the states $|0\rangle$ and $|1\rangle$, since our starting state was $|\psi\rangle$. We can also calculate this probability via the inner-product,
+
+$$
+\langle 0 | \psi \rangle^2 = \frac{1}{2} \qquad \langle 1 | \psi \rangle^2 = \frac{1}{2}
+$$
+
+Let's visualize this in the form of a histogram. For this, we import the `plot_histogram` function.
+
+```python
+>>> from qiskit.visualization import plot_histogram
+>>> plot_histogram(counts)
+```
+
+\figenv{}{/assets/images/histogram.png}{width:35em;}
+
+You can find the entire script in this [gist](https://gist.github.com/paniash/52497bf574ea4570ce5f0a21fa093b12).

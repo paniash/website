@@ -74,14 +74,7 @@ cr &#61; ClassicalRegister&#40;1&#41;</code></pre>
 <pre><code class="language-python">qc.measure&#40;qr&#91;0&#93;, cr&#91;0&#93;&#41;</code></pre>
 <p>The above syntax generally means that we&#39;re measuring the state of <code>qr&#91;0&#93;</code> &#40;the first qubit&#41; onto the classical register <code>cr&#91;0&#93;</code> where we store the measured value.</p>
 <h2 id="visualizing_the_circuit"><a href="#visualizing_the_circuit" class="header-anchor">Visualizing the circuit</a></h2>
-<p>Ok so all of this is nice, but one can only describe so much. Let&#39;s see how our circuit actually looks like after applying the above operations. For this, we use the <code>draw&#40;&#41;</code> method.</p>
-<pre><code class="language-python">&gt;&gt;&gt; qc.draw&#40;output&#61;&#39;text&#39;&#41;   # specifying the &#39;text&#39; backend</code></pre>
-<pre><code class="language-plaintext">┌─────────────────────────────┐┌─┐
-q0_0: ┤ Initialize&#40;0.70711,0.70711&#41; ├┤M├
-      └─────────────────────────────┘└╥┘
-c0: 1/════════════════════════════════╩═
-                                      0</code></pre>
-<p>For a nice looking figure, we use the <code>matplotlib</code> backend.</p>
+<p>Ok so all of this is nice, but one can only describe so much. Let&#39;s see how our circuit actually looks like after applying the above operations. For this, we use the <code>draw&#40;&#41;</code> method with the <code>matplotlib</code> backend.</p>
 <pre><code class="language-python">&gt;&gt;&gt; qc.draw&#40;output&#61;&#39;mpl&#39;&#41;</code></pre>
 
 <figure style="text-align:center;">
@@ -91,6 +84,48 @@ c0: 1/════════════════════════�
 
 <h2 id="choosing_a_backend_for_measurement"><a href="#choosing_a_backend_for_measurement" class="header-anchor">Choosing a backend for measurement</a></h2>
 <p>To measure the qubit and store the result in the classical register <code>cr</code>, we use the <code>qasm_simulator</code> backend. As we know from basic quantum mechanics,</p>
+<pre><code class="language-python">from qiskit import Aer
+backend &#61; Aer.get_backend&#40;&#39;qasm_simulator&#39;&#41;</code></pre>
+<p>We then transpile our circuit for the <code>qasm_simulator</code> backend to understand and execute the circuit.</p>
+<pre><code class="language-python">from qiskit import transpile
+qc_compiled &#61; transpile&#40;qc, backend&#41;</code></pre>
+<p>Now, we simply execute the circuit and gather the measurement results.</p>
+<pre><code class="language-python">job &#61; backend.run&#40;qc_compiled, shots&#61;1024&#41;  # shots is the number of times we run the experiment
+results &#61; job.result&#40;&#41;</code></pre>
+<p>We store the value of the <code>result</code> object and can further access the number of times we end up with a certain value of expected outcome with the <code>get_counts&#40;&#41;</code> method.</p>
+<pre><code class="language-python">counts &#61; results.get_counts&#40;qc_compiled&#41;
+print&#40;counts&#41;</code></pre>
+<pre><code class="language-plaintext">&#123;&#39;0&#39;: 518, &#39;1&#39;: 506&#125;</code></pre>
+<p>Here we end up with a dictionary of key values <code>&#39;0&#39;</code> and <code>&#39;1&#39;</code>, which indicate the following quantum states:</p>
+\[
+| 0 \rangle =
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
+
+\qquad
+
+| 1 \rangle =
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix}
+\]
+<p>As expected, we get a 50-50 distribution of the states \(|0\rangle\) and \(|1\rangle\), since our starting state was \(|\psi\rangle\). We can also calculate this probability via the inner-product,</p>
+\[
+\langle 0 | \psi \rangle^2 = \frac{1}{2} \qquad \langle 1 | \psi \rangle^2 = \frac{1}{2}
+\]
+<p>Let&#39;s visualize this in the form of a histogram. For this, we import the <code>plot_histogram</code> function.</p>
+<pre><code class="language-python">&gt;&gt;&gt; from qiskit.visualization import plot_histogram
+&gt;&gt;&gt; plot_histogram&#40;counts&#41;</code></pre>
+
+<figure style="text-align:center;">
+<img src="/assets/images/histogram.png" style="padding:0; width:35em;" alt=" "/>
+<figcaption> </figcaption>
+</figure>
+
+<p>You can find the entire script in this <a href="https://gist.github.com/paniash/52497bf574ea4570ce5f0a21fa093b12">gist</a>.</p>
 <div class="page-foot">
   <div class="copyright">
     <br>
