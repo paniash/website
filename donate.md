@@ -2,7 +2,9 @@
 
 If you like my work and would like to support it, please consider donating.
 
+@@left
 - Donate Bitcoin ([QR](/assets/images/btc.png)): `bc1q47ygl7uu3d94vr64nwqkvcajrstyk39mejv03a`
+@@
 
 @@crypto
 \fig{/assets/images/btc.png}
