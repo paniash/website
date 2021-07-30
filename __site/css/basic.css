@@ -109,7 +109,7 @@ medium display: nav goes under name
 narrow display: collapse the header (don't show the menu items)
 instead, display a burger menu.
 */
-@media (max-width: 500px) {
+@media (max-width: 0px) {
   header {
     height: 35px;
     display: flex;
