@@ -8,7 +8,7 @@ I did my Bachelor's [thesis](assets/files/thesis.pdf) with [Dr. Kartik Senapati]
 
 If you have any questions, suggestions, advice or simply wish to discuss about topics that relate to me, feel free to contact me via [email](mailto:ashish.panigrahi@niser.ac.in). See [here](contact/) for more detail.
 
-<!-- For academic details, see my [resume](assets/files/resume.pdf). -->
+For academic details, see my [CV](assets/files/resume.pdf).
 
 ### *Disclaimer*
 
