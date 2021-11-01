@@ -16,6 +16,6 @@ The thoughts that I present in my blog are truly my own and do **not** represent
 
 ## Blog
 
-Thoughts on physics, society and technology.
+_Thoughts on physics, society and technology._
 
 {{recentblogposts}}
