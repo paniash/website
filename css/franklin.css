@@ -55,6 +55,29 @@ html {
     width: 30%;
 }
 
+/* Add some padding inside the card container */
+.container {
+  /* padding: 2px 16px; */
+  padding: 4px;
+  text-align: center;
+}
+
+.row > .column {
+  padding: 0 100px;
+  padding-top: 3%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
 
 /* ==================================================================
     BASIC GRID FOR PROFILE PIC
@@ -280,7 +303,6 @@ td {
 
 .franklin-content img {
   width: 70%;
-  /* float: right; */
   text-align: right;
   padding-left: 10%;
 }
@@ -393,4 +415,23 @@ code {
   margin-bottom: 5px;
   border-radius: 0 10px 10px 0;
   border-left: 5px solid #4c9cf1;
+}
+
+/* These settings are for the cryptocurrency donation QR codes and info on the
+ * main page. */
+.qr { max-width: 150px ; padding: 10px; border: none; }
+.cryptocontainer {
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: center ;
+}
+.cryptoinfo {
+    max-width: 350px ;
+    text-align: center ;
+    padding-left: 10px ;
+    padding-right: 10px ;
+}
+.cryptoinfo code,.crypto {
+	font-size: small ;
+	overflow-wrap: break-word ;
 }
