@@ -40,6 +40,20 @@ html {
     text-align: left;
 }
 
+.displayPicture {
+    width: 40%;
+    float: right;
+    padding-left: 1%;
+    padding-right: 0%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+}
+
+.imgContainer {
+    float: left;
+    padding-left: 10%;
+    width: 30%;
+}
 
 
 /* ==================================================================
@@ -266,7 +280,8 @@ td {
 
 .franklin-content img {
   width: 70%;
-  text-align: center;
+  /* float: right; */
+  text-align: right;
   padding-left: 10%;
 }
 
@@ -337,22 +352,20 @@ code {
   font-size: 15px;
 }
 
-/* .franklin-content code { */
-
-/* background-color: rgba(27,31,35,0.05); */
-
-/* padding: 0.1em 0.2em; */
-
-/* border-radius: 2px; */
-
-/* font-size: 90%; } */
+/* .franklin-content code {
+  background-color: rgba(27,31,35,0.05);
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+  font-size: 90%;
+} */
 
 .hljs {
   /* font-size: var(--small); */
   font-size: 15px;
   line-height: 1.45em;
-  border-radius: 10px;
+  border-radius: 2px;
   color: #d3cdcd;
+  background-color: #1e1e1e;
 }
 
 .hljs-meta,

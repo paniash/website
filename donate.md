@@ -18,3 +18,16 @@ pjb3SjLAREPfVEojRu4qoTdUfACJABwKK4Gf5VG8JbT5fCqJ8aj2`
 @@crypto
 \fig{/assets/images/xmr.png}
 @@
+
+<!-- ~~~
+<div class="image123">
+    <div class="imgContainer">
+        <img src="/assets/images/btc.png"/>
+        <code>This is image</code>
+    </div>
+    <div class="imgContainer">
+        <img class="middle-img" src="/assets/images/xmr.png"/>
+        <p>This is image 2</p>
+    </div>
+</div>
+~~~ -->
