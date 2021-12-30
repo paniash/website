@@ -55,29 +55,6 @@ html {
     width: 30%;
 }
 
-/* Add some padding inside the card container */
-.container {
-  /* padding: 2px 16px; */
-  padding: 4px;
-  text-align: center;
-}
-
-.row > .column {
-  padding: 0 100px;
-  padding-top: 3%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-    float: left;
-    width: 25%;
-}
-
 
 /* ==================================================================
     BASIC GRID FOR PROFILE PIC
@@ -160,10 +137,27 @@ html {
 }
 
 /* On narrow device, reduce margins. */
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .franklin-content {
     padding-left: 6%;
     padding-right: 6%;
+  }
+
+  header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  header .blog-name {
+    width: 35%;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding-top: 10px;
   }
 }
 
