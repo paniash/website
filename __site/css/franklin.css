@@ -14,10 +14,10 @@
 ================================================================== */
 
 body {
-    background-color: #181A1B;  /* lighter-dark */
-    /* background-color: #131516;  /* darker-dark */
+    /* background-color: #181A1B;   */
+    background-color: #131516;
     color: #E8E6E3;
-    text-align: justify;
+    text-align: left;
 }
 
 html {
@@ -361,7 +361,7 @@ body { counter-reset: eqnum; }
 ================================================================== */
 
 code {
-  background-color: #1C1E1F;
+  background-color: #161515;
   color: #E94A93;
   padding: 0.1em 0.2em;
   border-radius: 2px;
@@ -381,7 +381,8 @@ code {
   line-height: 1.45em;
   border-radius: 2px;
   color: #d3cdcd;
-  background-color: #1e1e1e;
+  /* background-color: #1e1e1e; */
+  background-color: #1C1E1F;
 }
 
 .hljs-meta,
