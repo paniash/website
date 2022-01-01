@@ -18,8 +18,11 @@
   <ul>
     <!-- <li><a href="/assets/files/cv.pdf">CV</a></li> -->
     <li><a href="/contact/">Contact</a></li>
-    <li><a href="/feed.xml">RSS</a></li>
+    <!-- <li><a href="/feed.xml">RSS</a></li> -->
     <li><a href="/donate/">Donate</a></li>
+    <li><a type="application/rss+xml" href="/feed.xml">
+      <img class="rss-icon" src="/assets/images/feed.svg">
+        </a></li>
   </ul>
   <img src="/assets/hamburger.svg" id="menu-icon">
 </nav>
@@ -147,7 +150,21 @@ U
     
         <script src="/libs/katex/katex.min.js"></script>
 <script src="/libs/katex/auto-render.min.js"></script>
-<script>renderMathInElement(document.body)</script>
+<script>
+  const options = {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false},
+      {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+      {left: "\\begin{align}", right: "\\end{align}", display: true},
+      {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+      {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+      {left: "\\(", right: "\\)", display: false},
+      {left: "\\[", right: "\\]", display: true}
+    ]
+  };
+  renderMathInElement(document.body)
+</script>
 
     
     

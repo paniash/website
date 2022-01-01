@@ -16,8 +16,8 @@
 body {
     background-color: #181A1B;
     /* background-color: #131516; */
-    color: #E8E6E3;
-    text-align: left;
+    color: #D0CCC6;
+    text-align: justify;
 }
 
 html {
@@ -49,10 +49,22 @@ html {
     padding-top: 5%;
 }
 
-.avatar-image {
+/* .avatar-image {
   width: 20% !important;
   height: auto;
   border-radius: 50%;
+} */
+
+.avatar-image {
+  width: 8rem !important;
+  height: auto;
+  border-radius: 50%;
+}
+
+.tikz img {
+  /* centering */
+  display: block;
+  margin: auto;
 }
 
 .imgContainer {
@@ -91,6 +103,11 @@ html {
   font-size: 70%;
 }
 
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
 /* ==================================================================
     FOOT / COPYRIGHT
 ================================================================== */
@@ -107,7 +124,7 @@ html {
   color: #a6a2a0;
   text-align: center;
   margin-top: 4em;
-  border-top: 0.5px solid lightgrey;
+  border-top: 0.5px solid #666464;
   padding-top: 0em;
   margin-bottom: 4em;
 }
@@ -435,4 +452,9 @@ code {
 .cryptoinfo code,.crypto {
 	font-size: small ;
 	overflow-wrap: break-word ;
+}
+
+.rss-icon {
+    position: relative;
+    top: 1px;
 }
