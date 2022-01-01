@@ -1,5 +1,5 @@
 @def authors = "Ashish Panigrahi"
-@def published = "26 July 2020"
+@def published = "26-07-2020"
 @def rss_pubdate = Date(2020, 7, 26)
 @def rss_description = "A primer to no-cloning theorem"
 @def title = "A primer to no-cloning theorem"

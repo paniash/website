@@ -1,5 +1,5 @@
 @def authors = "Ashish Panigrahi"
-@def published = "20 July 2020"
+@def published = "20-07-2020"
 @def rss_pubdate = Date(2020, 7, 20)
 @def rss_description = "This blog post is about public-key cryptography"
 @def title = "Intro to public-key cryptography"

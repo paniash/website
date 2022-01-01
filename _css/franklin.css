@@ -436,3 +436,8 @@ code {
 	font-size: small ;
 	overflow-wrap: break-word ;
 }
+
+.rss-icon {
+    position: relative;
+    top: 1px;
+}

@@ -31,7 +31,59 @@ function hfun_recentblogposts()
         fi = "blog/" * splitext(list[i])[1]
         title = pagevar(fi, "title")
         fi = "/blog/" * splitext(list[i])[1]
-        write(io, """<li><a href="$fi">$title</a></li>\n """)
+        write(io, """<li><b><a href="$fi">$title</a></b></li>\n """)
+    end
+    write(io, "</ul>")
+    return String(take!(io))
+end
+
+
+"""
+    {{blogposts}}
+
+Plug in the list of blog posts contained in the `/posts` folder.
+Souce: <https://github.com/abhishalya/abhishalya.github.io>.
+"""
+@delay function hfun_blogposts()
+    today = Dates.today()
+    curyear = year(today)
+    curmonth = month(today)
+    curday = day(today)
+
+    list = readdir("blog")
+    filter!(endswith(".md"), list)
+    function sorter(p)
+        ps  = splitext(p)[1]
+        url = "/blog/$ps/"
+        surl = strip(url, '/')
+        pubdate = pagevar(surl, "published")
+        if isnothing(pubdate)
+            return Date(Dates.unix2datetime(stat(surl * ".md").ctime))
+        end
+        return Date(pubdate, dateformat"dd-mm-yyyy")
+    end
+    sort!(list, by=sorter, rev=true)
+
+    io = IOBuffer()
+    write(io, """<ul class="blog-posts">""")
+    for (i, post) in enumerate(list)
+        if post == "index.md"
+            continue
+        end
+        ps = splitext(post)[1]
+        write(io, "<li><span><i>")
+        url = "/blog/$ps/"
+        surl = strip(url, '/')
+        title = pagevar(surl, "title")
+        pubdate = pagevar(surl, "published")
+        description = pagevar(surl, "rss_description")
+        if isnothing(pubdate)
+            date = "$curday-$curmonth-$curyear"
+        else
+            date = Date(pubdate, dateformat"dd-mm-yyyy")
+        end
+        write(io, """$date</i></span><b><a href="$url">$title</a></b>""")
+        write(io, """<li><i class="description">$description</i></li>""")
     end
     write(io, "</ul>")
     return String(take!(io))
