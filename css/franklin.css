@@ -160,27 +160,10 @@ figcaption {
 }
 
 /* On narrow device, reduce margins. */
-@media (max-width: 650px) {
+@media (max-width: 480px) {
   .franklin-content {
     padding-left: 6%;
     padding-right: 6%;
-  }
-
-  header {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-  }
-
-  header .blog-name {
-    width: 35%;
-    display: inline-block;
-    text-align: center;
-    font-size: 24px;
-    font-family: "Lucida Console", Monaco, monospace;
-    padding-top: 10px;
   }
 }
 
@@ -188,7 +171,7 @@ figcaption {
     TITLES
 ================================================================== */
 
-.franklin-content h1 { font-size: 30px; }
+.franklin-content h1 { font-size: 29px; }
 .franklin-content h2 { font-size: 24px; }
 .franklin-content h3 { font-size: 20px; }
 
@@ -457,4 +440,26 @@ code {
 .rss-icon {
     position: relative;
     top: 2px;
+}
+
+
+/* ==================================================================
+    BLOG POSTS (source: abhishalya)
+================================================================== */
+
+ul.blog-posts {
+  list-style-type: none;
+  padding: unset;
+}
+
+ul.blog-posts li {
+  display: flex;
+}
+
+ul.blog-posts li span {
+  flex: 0 0 130px;
+}
+
+ul.blog-posts li a:visited {
+  color: #8b6fcb;
 }
