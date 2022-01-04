@@ -1,4 +1,4 @@
-Sitemap: https://ashishpanigrahi.me/sitemap.xml
+Sitemap: https://ashishpanigrahi.xyz/sitemap.xml
 
 User-agent: *
 Disallow:

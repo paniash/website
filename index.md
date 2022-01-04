@@ -1,9 +1,5 @@
 @def title = "Ashish Panigrahi"
 
-<!-- @@displayPicture
-![me](assets/images/my-passport-photo.jpg)
-@@ -->
-
 ~~~
 <center>
 <img class="avatar-image" src="/assets/images/self.jpeg">
