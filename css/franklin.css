@@ -152,9 +152,6 @@ h6 {
   margin-bottom: 1em;
 }
 
-.front-heading {
-  border-bottom: 1px solid #666464;
-}
 
 .franklin-content h1 a { color: inherit; }
 .franklin-content h1 a:hover { text-decoration: none; }
@@ -490,4 +487,9 @@ ul.blog-posts li a:visited {
     float: left;
     padding-left: 10%;
     width: 30%;
+}
+
+.front-heading {
+  border-bottom: 1px solid #666464;
+  line-height: 15px;
 }
