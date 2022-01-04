@@ -16,7 +16,7 @@
 body {
     background-color: #181A1B;
     /* background-color: #131516; */
-    color: #D0CCC6;
+    color: #E8E6E3;
     text-align: left;
 }
 
@@ -25,52 +25,6 @@ html {
   /* font-size: var(--normal); */
   font-size: 18px;
   color: var(--text-color);
-}
-
-/* For inserting snippets of smaller size text */
-.smol {
-    font-size: 16px;
-    color: var(--text-color);
-}
-
-.left {
-    background-color: #181A1B;  /* lighter-dark */
-    /* background-color: #131516;  /* darker-dark */
-    color: #E8E6E3;
-    text-align: left;
-}
-
-.displayPicture {
-    width: 40%;
-    float: right;
-    padding-left: 1%;
-    padding-right: 0%;
-    padding-bottom: 1%;
-    padding-top: 5%;
-}
-
-/* .avatar-image {
-  width: 20% !important;
-  height: auto;
-  border-radius: 50%;
-} */
-
-.avatar-image {
-  width: 8rem !important;
-  height: auto;
-  border-radius: 50%;
-}
-
-.tikz img {
-  /* centering */
-  display: block;
-  margin: auto;
-}
-
-.imgContainer {
-    float: left;
-    padding-left: 10%;
-    width: 30%;
 }
 
 
@@ -196,6 +150,10 @@ h6 {
   /* border-bottom: 1px solid #666464; */
   margin-top: 2em;
   margin-bottom: 1em;
+}
+
+.front-heading {
+  border-bottom: 1px solid #666464;
 }
 
 .franklin-content h1 a { color: inherit; }
@@ -460,6 +418,70 @@ ul.blog-posts li span {
   flex: 0 0 130px;
 }
 
-ul.blog-posts li a:visited {
+/* ul.blog-posts li a:visited {
   color: #8b6fcb;
+} */
+
+
+/* ==================================================================
+    Various additions to the default theme
+================================================================== */
+
+.description {
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.avatar-image {
+  width: 8rem !important;
+  heigth: auto;
+  border-radius: 50%;
+}
+
+.tikz img {
+  /* centering */
+  display: block;
+  margin: auto;
+}
+
+.page-title {
+  margin-bottom: 0.4rem !important;
+}
+
+.page-date {
+  display: block;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+/* ==================================================================
+    Custom additions to the website
+================================================================== */
+
+/* For inserting snippets of smaller size text */
+.smol {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.left {
+    background-color: #181A1B;  /* lighter-dark */
+    /* background-color: #131516;  /* darker-dark */
+    color: #E8E6E3;
+    text-align: left;
+}
+
+.displayPicture {
+    width: 40%;
+    float: right;
+    padding-left: 1%;
+    padding-right: 0%;
+    padding-bottom: 1%;
+    padding-top: 5%;
+}
+
+.imgContainer {
+    float: left;
+    padding-left: 10%;
+    width: 30%;
 }

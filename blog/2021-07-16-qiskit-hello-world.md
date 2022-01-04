@@ -1,7 +1,7 @@
 @def authors = "Ashish Panigrahi"
 @def published = "16-07-2021"
 @def rss_pubdate = Date(2021, 7, 16)
-@def rss_description = "Hello world program in Qiskit"
+@def rss_description = "This blog post provides a tutorial on implementing a first \"hello, world\" program in a quantum computing framework called Qiskit."
 @def title = "Hello, world in Qiskit"
 
 # Hello, world in Qiskit

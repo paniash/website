@@ -1,7 +1,7 @@
 @def authors = "Ashish Panigrahi"
-@def published = "30-03-2021"
+@def published = "30-05-2021"
 @def rss_pubdate = Date(2021, 5, 30)
-@def rss_description = "Fixing font rendering on firefox"
+@def rss_description = "Are you irritated by the font rendering in firefox? This blog post explains how to fix it on unix-based systems."
 @def title = "Font rendering in firefox"
 
 # Font rendering on firefox
@@ -21,8 +21,6 @@ On firefox, you may have come across the font settings that look something like 
 My past self would unselect the option _**Allow pages to choose their own fonts, instead of your selections above**_, just so that I can have my custom fonts rendered. But oh boy, would that turn out disastrous to say the least. I visit a good number of websites that render math equations in TeX, but with this setting turned off, LaTeX looked more like some flunky '90s PC trying to render math.
 
 What was the fix you might ask? Well, just select the option that I had unselected earlier. But this would bring that the atrocious fonts back on many websites.
-
-
 
 ## The fix
 
