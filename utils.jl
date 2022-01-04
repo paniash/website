@@ -19,12 +19,32 @@ function hfun_timestamp_now()
     return string(Dates.now()) * "+00:00"
 end
 
+function hfun_recentblogposts()
+    list = readdir("blog")
+    filter!(f -> endswith(f, ".md"), list)
+    dates = [stat(joinpath("blog", f)).mtime for f in list]
+    perm = sortperm(dates, rev=true)
+    idxs = perm[1:max(1, length(perm))]
+    io = IOBuffer()
+    write(io, "<ul>")
+    for (k, i) in enumerate(idxs)
+        fi = "blog/" * splitext(list[i])[1]
+        title = pagevar(fi, "title")
+        fi = "/blog/" * splitext(list[i])[1]
+        write(io, """<li><b><a href="$fi">$title</a></b></li>\n """)
+    end
+    write(io, "</ul>")
+    return String(take!(io))
+end
+
+
 """
     {{blogposts}}
+
 Plug in the list of blog posts contained in the `/posts` folder.
 Souce: <https://github.com/abhishalya/abhishalya.github.io>.
 """
-function hfun_blogposts()
+@delay function hfun_blogposts()
     today = Dates.today()
     curyear = year(today)
     curmonth = month(today)
@@ -36,11 +56,11 @@ function hfun_blogposts()
         ps  = splitext(p)[1]
         url = "/blog/$ps/"
         surl = strip(url, '/')
-        pubdate = pagevar(surl, :published)
+        pubdate = pagevar(surl, "published")
         if isnothing(pubdate)
             return Date(Dates.unix2datetime(stat(surl * ".md").ctime))
         end
-        return Date(pubdate, dateformat"d U Y")
+        return Date(pubdate, dateformat"dd-mm-yyyy")
     end
     sort!(list, by=sorter, rev=true)
 
@@ -50,17 +70,17 @@ function hfun_blogposts()
         if post == "index.md"
             continue
         end
-        ps  = splitext(post)[1]
+        ps = splitext(post)[1]
         write(io, "<li><span><i>")
         url = "/blog/$ps/"
         surl = strip(url, '/')
-        title = pagevar(surl, :title)
-        pubdate = pagevar(surl, :published)
-        description = pagevar(surl, :description)
+        title = pagevar(surl, "title")
+        pubdate = pagevar(surl, "published")
+        description = pagevar(surl, "rss_description")
         if isnothing(pubdate)
-            date = "$curyear-$curmonth-$curday"
+            date = "$curday-$curmonth-$curyear"
         else
-            date = Date(pubdate, dateformat"d U Y")
+            date = Date(pubdate, dateformat"dd-mm-yyyy")
         end
         write(io, """$date</i></span><b><a href="$url">$title</a></b>""")
         write(io, """<li><i class="description">$description</i></li>""")
