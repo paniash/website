@@ -28,7 +28,7 @@
   <link> https://ashishpanigrahi.me/blog/2021-07-16-qiskit-hello-world/index.html </link>
   <guid> https://ashishpanigrahi.me/blog/2021-07-16-qiskit-hello-world/index.html </guid>
   <description>
-    <![CDATA[  Hello world program in Qiskit  ]]>
+    <![CDATA[  This blog post provides a tutorial on implementing a first &quot;hello, world&quot; program in a quantum computing framework called Qiskit.  ]]>
   </description>  
     
   <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>  
@@ -47,7 +47,7 @@
   <link> https://ashishpanigrahi.me/blog/2021-05-30-firefox-fonts/index.html </link>
   <guid> https://ashishpanigrahi.me/blog/2021-05-30-firefox-fonts/index.html </guid>
   <description>
-    <![CDATA[  Fixing font rendering on firefox  ]]>
+    <![CDATA[  Are you irritated by the font rendering in firefox? This blog post explains how to fix it on unix-based systems.  ]]>
   </description>  
     
   <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>  
@@ -61,12 +61,12 @@
 
 <item>
   <title>
-    <![CDATA[  A primer to no-cloning theorem  ]]>
+    <![CDATA[  A primer to no-cloning theorem.  ]]>
   </title>
   <link> https://ashishpanigrahi.me/blog/2020-07-26-no-cloning-theorem/index.html </link>
   <guid> https://ashishpanigrahi.me/blog/2020-07-26-no-cloning-theorem/index.html </guid>
   <description>
-    <![CDATA[  A primer to no-cloning theorem  ]]>
+    <![CDATA[  A primer to no-cloning theorem explaining why it is forbidden to copy a general unknown quantum state A onto another quantum state B.  ]]>
   </description>  
     
   <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>  
@@ -85,7 +85,7 @@
   <link> https://ashishpanigrahi.me/blog/2020-07-20-cryptography-intro/index.html </link>
   <guid> https://ashishpanigrahi.me/blog/2020-07-20-cryptography-intro/index.html </guid>
   <description>
-    <![CDATA[  This blog post is about public-key cryptography  ]]>
+    <![CDATA[  This post talks about the basics of asymmetric cryptography a.k.a. public-key cryptography explaining how the protocol works from a layman&#39;s perspective.  ]]>
   </description>  
     
   <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>  
