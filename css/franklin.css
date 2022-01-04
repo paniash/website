@@ -17,7 +17,7 @@ body {
     background-color: #181A1B;
     /* background-color: #131516; */
     color: #E8E6E3;
-    text-align: justify;
+    text-align: left;
 }
 
 html {
@@ -107,7 +107,7 @@ figcaption {
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
-    width: 705px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
