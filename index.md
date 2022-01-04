@@ -6,7 +6,7 @@
 
 ~~~
 <center>
-<img class="avatar-image" src="/assets/self.jpeg">
+<img class="avatar-image" src="/assets/images/self.jpeg">
 </center>
 ~~~
 
