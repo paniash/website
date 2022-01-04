@@ -11,12 +11,12 @@
     <title>
       <![CDATA[  Ashish Panigrahi&#39;s blog  ]]>
     </title>
-    <link> https://ashishpanigrahi.me </link>
+    <link> https://ashishpanigrahi.xyz </link>
     <description>
       <![CDATA[  Thoughts on physics, society and technology  ]]>
     </description>
     <atom:link
-      href="https://ashishpanigrahi.me/feed.xml"
+      href="https://ashishpanigrahi.xyz/feed.xml"
       rel="self"
       type="application/rss+xml" />
 
@@ -25,8 +25,8 @@
   <title>
     <![CDATA[  Hello, world in Qiskit  ]]>
   </title>
-  <link> https://ashishpanigrahi.me/blog/2021-07-16-qiskit-hello-world/index.html </link>
-  <guid> https://ashishpanigrahi.me/blog/2021-07-16-qiskit-hello-world/index.html </guid>
+  <link> https://ashishpanigrahi.xyz/blog/2021-07-16-qiskit-hello-world/index.html </link>
+  <guid> https://ashishpanigrahi.xyz/blog/2021-07-16-qiskit-hello-world/index.html </guid>
   <description>
     <![CDATA[  This blog post provides a tutorial on implementing a first &quot;hello, world&quot; program in a quantum computing framework called Qiskit.  ]]>
   </description>  
@@ -44,8 +44,8 @@
   <title>
     <![CDATA[  Font rendering in firefox  ]]>
   </title>
-  <link> https://ashishpanigrahi.me/blog/2021-05-30-firefox-fonts/index.html </link>
-  <guid> https://ashishpanigrahi.me/blog/2021-05-30-firefox-fonts/index.html </guid>
+  <link> https://ashishpanigrahi.xyz/blog/2021-05-30-firefox-fonts/index.html </link>
+  <guid> https://ashishpanigrahi.xyz/blog/2021-05-30-firefox-fonts/index.html </guid>
   <description>
     <![CDATA[  Are you irritated by the font rendering in firefox? This blog post explains how to fix it on unix-based systems.  ]]>
   </description>  
@@ -63,8 +63,8 @@
   <title>
     <![CDATA[  A primer to no-cloning theorem.  ]]>
   </title>
-  <link> https://ashishpanigrahi.me/blog/2020-07-26-no-cloning-theorem/index.html </link>
-  <guid> https://ashishpanigrahi.me/blog/2020-07-26-no-cloning-theorem/index.html </guid>
+  <link> https://ashishpanigrahi.xyz/blog/2020-07-26-no-cloning-theorem/index.html </link>
+  <guid> https://ashishpanigrahi.xyz/blog/2020-07-26-no-cloning-theorem/index.html </guid>
   <description>
     <![CDATA[  A primer to no-cloning theorem explaining why it is forbidden to copy a general unknown quantum state A onto another quantum state B.  ]]>
   </description>  
@@ -82,8 +82,8 @@
   <title>
     <![CDATA[  Intro to public-key cryptography  ]]>
   </title>
-  <link> https://ashishpanigrahi.me/blog/2020-07-20-cryptography-intro/index.html </link>
-  <guid> https://ashishpanigrahi.me/blog/2020-07-20-cryptography-intro/index.html </guid>
+  <link> https://ashishpanigrahi.xyz/blog/2020-07-20-cryptography-intro/index.html </link>
+  <guid> https://ashishpanigrahi.xyz/blog/2020-07-20-cryptography-intro/index.html </guid>
   <description>
     <![CDATA[  This post talks about the basics of asymmetric cryptography a.k.a. public-key cryptography explaining how the protocol works from a layman&#39;s perspective.  ]]>
   </description>  
