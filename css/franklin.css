@@ -99,11 +99,6 @@ figcaption {
   line-height: 1.35em;
 }
 
-/* Custom line height adjuster */
-.lesser-height {
-    line-height: 0.8em;
-}
-
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
@@ -489,7 +484,13 @@ ul.blog-posts li a:visited {
     width: 30%;
 }
 
+/* Fixes spacing between blog title and subtitle */
 .front-heading {
   border-bottom: 1px solid #666464;
   line-height: 15px;
+}
+
+/* Custom line height adjuster */
+.lesser-height {
+    line-height: 0.8em;
 }
