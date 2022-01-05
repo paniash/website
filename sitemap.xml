@@ -14,6 +14,36 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://ashishpanigrahi.xyz/blog/index.html</loc>
+    <lastmod>2022-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://ashishpanigrahi.xyz/books/index.html</loc>
+    <lastmod>2021-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://ashishpanigrahi.xyz/contact/index.html</loc>
+    <lastmod>2022-01-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://ashishpanigrahi.xyz/index.html</loc>
+    <lastmod>2022-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://ashishpanigrahi.xyz/blog/2020-07-26-no-cloning-theorem/index.html</loc>
+    <lastmod>2022-01-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://ashishpanigrahi.xyz/404/index.html</loc>
     <lastmod>2022-01-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -26,37 +56,13 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://ashishpanigrahi.xyz/contact/index.html</loc>
+    <loc>https://ashishpanigrahi.xyz/blog/2021-05-30-firefox-fonts/index.html</loc>
     <lastmod>2022-01-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://ashishpanigrahi.xyz/index.html</loc>
-    <lastmod>2022-01-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://ashishpanigrahi.xyz/blog/2020-07-26-no-cloning-theorem/index.html</loc>
-    <lastmod>2022-01-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://ashishpanigrahi.xyz/books/index.html</loc>
-    <lastmod>2021-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://ashishpanigrahi.xyz/blog/2020-07-20-cryptography-intro/index.html</loc>
-    <lastmod>2022-01-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://ashishpanigrahi.xyz/blog/2021-05-30-firefox-fonts/index.html</loc>
     <lastmod>2022-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
