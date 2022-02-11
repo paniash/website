@@ -23,25 +23,6 @@
 
 <item>
   <title>
-    <![CDATA[  Overview of semiconductor heterostructures  ]]>
-  </title>
-  <link> https://ashishpanigrahi.xyz/blog/2022-01-23-heterostructures/index.html </link>
-  <guid> https://ashishpanigrahi.xyz/blog/2022-01-23-heterostructures/index.html </guid>
-  <description>
-    <![CDATA[  This blog post provides a tutorial on implementing a first &quot;hello, world&quot; program in a quantum computing framework called Qiskit.  ]]>
-  </description>  
-    
-  <pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate>  
-  
-  
-  <atom:author>
-    <atom:name>Ashish Panigrahi</atom:name>
-  </atom:author>
-        
-</item>
-
-<item>
-  <title>
     <![CDATA[  Hello, world in Qiskit  ]]>
   </title>
   <link> https://ashishpanigrahi.xyz/blog/2021-07-16-qiskit-hello-world/index.html </link>
