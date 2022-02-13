@@ -9,9 +9,6 @@
 Hello there!
 
 My name is Ashish Panigrahi. I'm a 4th year physics major studying under the Integrated Master's programme at the [National Institute of Science Education and Research](https://www.niser.ac.in) under [HBNI](http://www.hbni.ac.in/). My research interests lie in the field of quantum photonics, broadly investigating quantum interaction between light and matter in solid-state devices. The goal is to study photonic nanostructures to create hardware for applications in quantum technologies.
-I am actively seeking research internship opportunities for summer 2022.
-
-<!-- My research interests lie in the experimental aspects of quantum technologies research ranging from quantum optics/information processing to cavity quantum-electrodynamics. I am actively seeking research internship opportunities for summer 2022. -->
 
 I am currently working in [Dr. Shovon Pal's group](https://palshovon.wixsite.com/uthd) for my masters project on the investigation of quantum optical phenomena using semiconductor quantum dots. I did my Bachelor's [thesis](assets/files/thesis.pdf) with [Dr. Kartik Senapati](https://www.niser.ac.in/users/kartik#profile-main)'s group on spin Hall effect in NM/HM trilayer systems in spring 2021 during which I became a [Qiskit advocate](https://qiskit.org/advocates/). You can find my full CV [here](assets/files/cv.pdf).
 
