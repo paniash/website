@@ -2,7 +2,7 @@
 
 ~~~
 <center>
-<img class="avatar-image" src="/assets/images/self.jpeg">
+<img class="avatar-image" src="/assets/images/pass.jpg">
 </center>
 ~~~
 
