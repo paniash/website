@@ -202,10 +202,10 @@ td {
   text-decoration: none;
 }
 
-.franklin-content a:visited {
+/* .franklin-content a:visited {
   color: #8b6fcb;
   text-decoration: none;
-}
+} */
 
 .franklin-content a:hover {
   text-decoration: underline;
@@ -416,9 +416,9 @@ ul.blog-posts li span {
   flex: 0 0 130px;
 }
 
-ul.blog-posts li a:visited {
+/* ul.blog-posts li a:visited {
   color: #8b6fcb;
-}
+} */
 
 
 /* ==================================================================
