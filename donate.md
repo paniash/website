@@ -1,6 +1,6 @@
 ## Donate
 
-If you like my work and would like to support it, please consider donating.
+If you like my work and would like to support it, please consider donating. It certainly helps with the web hosting costs. ;-)
 
 ~~~
 <div class=cryptocontainer>

@@ -17,7 +17,7 @@
 </ul>
 ~~~ -->
 
-Feel free to send me your suggestions, queries or any message regarding topics that relate to me. I normally reply within 48 hours if not sooner through email.
+Feel free to send me your suggestions, queries or any message regarding topics that relate to me. I normally reply within 48 hours if not sooner.
 
 You can also find me on [GitHub](https://github.com/paniash).
 
