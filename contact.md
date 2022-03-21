@@ -60,7 +60,7 @@ PaJgGuURVy/RK6Nx708bHRPulKrrbR1+k0aDAs1V252TzSU+6LAAeX2AVGva/KQD
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-> This key expires on 13th March, 2022. (Last expired on 16th January 2021 and later renewed).
+> This key expires on 15th May, 2023. (Last expired on 13th March 2022 and later renewed).
 
 
 > I highly recommend learning and using encryption in your email communications. You don't have to be a tech guru to implement it. Make it a default method with your frequent contacts. Read this excellent guide on [email self-defence](https://emailselfdefense.fsf.org/en/) by the Free Software Foundation.
