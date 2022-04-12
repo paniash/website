@@ -2,6 +2,7 @@
 
 @@lesser-height
 - Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in)
+- Alt email: [ashish.panigrahi@proton.me](mailto:ashish.panigrahi@proton.me)
 <!-- - Matrix: [`@paniash:matrix.org`](https://matrix.to/#/@paniash:matrix.org)
 - IRC: `paniash` (irc.libera.chat)
     - You can find me on `#neomutt`. -->
