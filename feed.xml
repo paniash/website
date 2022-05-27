@@ -23,6 +23,25 @@
 
 <item>
   <title>
+    <![CDATA[  Week 1: Hunt for Literature  ]]>
+  </title>
+  <link> https://ashishpanigrahi.xyz/blog/2022-05-27-anu-week1/index.html </link>
+  <guid> https://ashishpanigrahi.xyz/blog/2022-05-27-anu-week1/index.html </guid>
+  <description>
+    <![CDATA[  First week of my summer internship at the Australian National University. I&#39;ll be working on spontaneous parametric down conversion &#40;SPDC&#41; in two-dimensional nonlinear materials.  ]]>
+  </description>  
+    
+  <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Ashish Panigrahi</atom:name>
+  </atom:author>
+        
+</item>
+
+<item>
+  <title>
     <![CDATA[  Hello, world in Qiskit  ]]>
   </title>
   <link> https://ashishpanigrahi.xyz/blog/2021-07-16-qiskit-hello-world/index.html </link>
