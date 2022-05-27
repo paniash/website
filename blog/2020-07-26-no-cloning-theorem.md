@@ -14,7 +14,8 @@ An operator $U$ is unitary if
 $$
 U U^\dagger = U^\dagger U = I
 $$
-where $U^\dagger$ is the complex conjugate (interchange rows & columns and replace $i$ with $-i$) of $U$.
+where $U^\dagger$ is the complex conjugate (interchange rows & columns and replace
+$i$ with $-i$) of $U$.
 
 ### *Tensor product:*
 
@@ -70,19 +71,31 @@ $$
 I have used the term unitary transform and unitary operation interchangeably (since they mean the same thing).
 
 ## Introduction
-Given a quantum state $\left| \psi \right> = \alpha \left| 0 \right> + \beta \left| 1 \right>$ with unknown complex coefficients $\alpha$ and $\beta$, is it possible to replicate the state onto another qubit? In other words, is it possible to go from $\left| \psi \right>$ to $\left| \psi \right> \otimes \left| \psi \right>$? Let us form a hypothesis.
+Given a quantum state $\left| \psi \right> = \alpha \left| 0 \right> + \beta \left| 1
+\right>$ with unknown complex coefficients $\alpha$ and $\beta$, is it possible to
+replicate the state onto another qubit? In other words, is it possible to go from
+$\left| \psi \right>$ to $\left| \psi \right> \otimes \left| \psi \right>$? Let us
+form a hypothesis.
 
 ### *Hypothesis:*
-Given an unknown quantum state $\left| \psi \right>$, there exists a unitary transform $U$ such that it replicates the state $\left| \psi \right>$ to $\left| \psi \right> \otimes \left| \psi \right>$.
+Given an unknown quantum state $\left| \psi \right>$, there exists a unitary
+transform $U$ such that it replicates the state $\left| \psi \right>$ to $\left| \psi
+\right> \otimes \left| \psi \right>$.
 
-From the postulates of quantum mechanics, any transformation of a quantum system must be unitary. Hence, we are trying to look for a unitary operation $U$ to make the following transform:
+From the postulates of quantum mechanics, any transformation of a quantum system must
+be unitary. Hence, we are trying to look for a unitary operation $U$ to make the
+following transform:
 $$
 U \left| \psi \right> \otimes \left| 0 \right> = \left| \psi \right> \otimes \left| \psi \right>
 $$
 
 Here the inputs are $\left| \psi \right>$ and an ancilla qubit (in our case $\left | 0 \right>$).
 
-The no cloning theorem tells us that such a unitary transform does not exist. Let us see how this is true, algebraically. We will do this by disproving the hypothesis. Let us look at the cases when $\left| \psi \right> = \left| 0 \right>$ and when $\left| \psi \right> = \left| 1 \right>$. On applying the operation $U$, the 2-qubit state becomes,
+The no cloning theorem tells us that such a unitary transform does not exist. Let us
+see how this is true, algebraically. We will do this by disproving the hypothesis.
+Let us look at the cases when $\left| \psi \right> = \left| 0 \right>$ and when
+$\left| \psi \right> = \left| 1 \right>$. On applying the operation $U$, the 2-qubit
+state becomes,
 
 $$
 \left| 0 \right> \otimes \left| 0 \right> = \left| 00 \right> \xrightarrow[]{U} \left| 00 \right>
@@ -122,7 +135,9 @@ U
 \end{pmatrix}
 $$
 
-Now comparing the coefficients of the output states, such a case is only possible if $\alpha = 1$ or $\beta = 1$. This disproves the hypothesis, hence proving the no cloning theorem.
+Now comparing the coefficients of the output states, such a case is only possible if
+$\alpha = 1$ or $\beta = 1$. This disproves the hypothesis, hence proving the no
+cloning theorem.
 
 
 ## References
