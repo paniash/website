@@ -18,6 +18,7 @@ body {
     /* background-color: #131516; */
     color: #E8E6E3;
     text-align: justify;
+    text-justify: auto;
 }
 
 html {
