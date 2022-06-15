@@ -4,8 +4,6 @@
 @def rss_description = "Are you irritated by the font rendering in firefox? This blog post explains how to fix it on unix-based systems."
 @def title = "Font rendering in firefox"
 
-# Font rendering on firefox
-
 ## Why do my fonts look disgusting?
 
 If you're on a \*nix system and compare the fonts on chrome and firefox, you'd notice

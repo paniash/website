@@ -136,9 +136,10 @@ h6 {
 
 .franklin-content h1 {
   padding-bottom: 0.5em;
-  /* border-bottom: 3px double #666464; */
+  border-bottom: 3px double #666464;
   margin-top: 1.5em;
   margin-bottom: 1em;
+  line-height: 32px;
 }
 
 .franklin-content h2 {
@@ -238,7 +239,9 @@ td {
 }
 
 .franklin-content .fndef tr {
-  border-left: 2px solid lightgray;
+  border: 0px solid gray;
+  color: #A9A7A6;
+  background-color: #1C1D1F;
 }
 
 .franklin-content .fndef td.fndef-backref {
@@ -248,7 +251,7 @@ td {
 }
 
 .franklin-content .fndef td.fndef-content {
-  font-size: 80%;
+  font-size: 85%;
   padding-left: 10px;
   width: 100%;
 }

@@ -4,8 +4,6 @@
 @def rss_description = "This blog post provides a tutorial on implementing a first \"hello, world\" program in a quantum computing framework called Qiskit."
 @def title = "Hello, world in Qiskit"
 
-# Hello, world in Qiskit
-
 ## What is Qiskit?
 
 Qiskit is a python SDK for simulating and running quantum algorithms on real quantum

@@ -2,9 +2,7 @@
 @def published = "26-07-2020"
 @def rss_pubdate = Date(2020, 7, 26)
 @def rss_description = "A primer to no-cloning theorem explaining why it is forbidden to copy a general unknown quantum state A onto another quantum state B."
-@def title = "A primer to no-cloning theorem."
-
-# A primer to the no-cloning theorem
+@def title = "A primer to no-cloning theorem"
 
 ## Prerequisites
 

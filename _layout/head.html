@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{if hasmath}} {{insert head_katex.html }}     {{end}}
-  {{if hascode}} {{insert head_highlight.html }}   {{end}}
+  {{insert head_katex.html }}
+  {{if hascode}} {{insert head_highlight.html }} {{end}}
   <link rel="stylesheet" href="/css/franklin.css">
   <link rel="stylesheet" href="/css/basic.css">
   <link rel="icon" href="/assets/favicon.png">
-  {{isdef title}} <title>{{fill title}}</title>  {{end}}
+  {{isdef title}} <title> {{fill title}} </title> {{end}}
+  {{isdef description}} <meta name="description" content="{{fill description}}" /> {{end}}
+
+  <meta property="og:title" content="{{requiredfill title}}" />
+  {{isdef published}}<meta property="og:type" content="article" /> {{end}}
+  <meta property="og:description" content="{{requiredfill rss}}" />
+  <!-- <meta property="og:image" content="{{website_url}}{{requiredfill image}}" /> -->
 </head>
 <body>
   {{insert header.html}}
 
-
-<!-- Content appended here -->
+<div class="franklin-content">
+  {{isdef published}} <h1 class="page-title"> {{fill title}} </h1> {{end}}
+  {{isdef published}} <span class="page-date"> {{fill published}} </span> {{end}}
+</div>

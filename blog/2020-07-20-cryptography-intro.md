@@ -4,8 +4,6 @@
 @def rss_description = "This post talks about the basics of asymmetric cryptography a.k.a. public-key cryptography explaining how the protocol works from a layman's perspective."
 @def title = "Intro to public-key cryptography"
 
-# A layman's intro to cryptography
-
 ## What is cryptography?
 We have all heard fancy jargon like "encryption", "cryptography" and what not, but
 what do these terms actually mean? In this article, I attempt to give you a brief
