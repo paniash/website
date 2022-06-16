@@ -51,3 +51,5 @@ println(py"res")
 </figure>
 ~~~
 }
+
+\newcommand{\strike}[1]{~~~<s>~~~!#1~~~</s>~~~}
