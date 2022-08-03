@@ -1,4 +1,4 @@
-@def authors = "Ashish Panigrahi"
+@def author = "Ashish Panigrahi"
 @def published = "20-07-2020"
 @def rss_pubdate = Date(2020, 7, 20)
 @def rss_description = "This post talks about the basics of asymmetric cryptography a.k.a. public-key cryptography explaining how the protocol works from a layman's perspective."

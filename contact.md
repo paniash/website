@@ -1,8 +1,7 @@
 # Contact
 
 @@lesser-height
-- Email: [ashish.panigrahi@niser.ac.in](mailto:ashish.panigrahi@niser.ac.in)
-- Alt email: [ashish.panigrahi@proton.me](mailto:ashish.panigrahi@proton.me)
+- Email: [`ashish.panigrahi@niser.ac.in`](mailto:ashish.panigrahi@niser.ac.in)
 <!-- - Matrix: [`@paniash:matrix.org`](https://matrix.to/#/@paniash:matrix.org)
 - IRC: `paniash` (irc.libera.chat)
     - You can find me on `#neomutt`. -->
@@ -18,12 +17,15 @@
 </ul>
 ~~~ -->
 
-Feel free to send me your suggestions, queries or any message regarding topics that relate to me. I normally reply within 48 hours if not sooner.
+Feel free to send me your suggestions, queries or any message regarding topics that
+relate to me. I normally reply within 48 hours if not sooner.
 
 You can also find me on [GitHub](https://github.com/paniash).
 
 ## PGP encryption for email (optional)
-Below is my public key. If you wish to send an encrypted message, use this. Copy and save my public key to a file, say `demo`, launch a terminal and run `gpg --import demo` (or whichever is equivalent for your system).
+Below is my public key. If you wish to send an encrypted message, use this. Copy and
+save my public key to a file, say `demo`, launch a terminal and run `gpg --import
+demo` (or whichever is equivalent for your system).
 
 > Make sure to **send me your public key** else I will not be able to reply.
 
@@ -68,4 +70,10 @@ PaJgGuURVy/RK6Nx708bHRPulKrrbR1+k0aDAs1V252TzSU+6LAAeX2AVGva/KQD
 
 
 ## Subscription
-If you wish to subscribe to my blog, do so through RSS feeds. I have taken a minimalist approach to making this website and as such don't use any form of comments framework. No ads, no tracking. Read [here](/philosophy) to know why.
+If you wish to subscribe to my blog, do so through RSS feeds. I have taken a
+minimalist approach to making this website and as such don't use any form of comments
+framework. No ads, no tracking. Read [here](/philosophy) to know why.
+
+@@text-center-small
+This website uses JavaScript to display equations and code-snippet highlighting.
+@@

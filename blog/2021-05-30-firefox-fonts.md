@@ -1,4 +1,4 @@
-@def authors = "Ashish Panigrahi"
+@def author = "Ashish Panigrahi"
 @def published = "30-05-2021"
 @def rss_pubdate = Date(2021, 5, 30)
 @def rss_description = "Are you irritated by the font rendering in firefox? This blog post explains how to fix it on unix-based systems."
