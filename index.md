@@ -24,14 +24,17 @@ effect in NM/HM trilayer systems in spring 2021 during which I became an [IBM Qi
 advocate](https://qiskit.org/advocates/). You can find my full CV
 [here](assets/files/cv.pdf).
 
-If you have any questions, suggestions, advice or simply wish to discuss about topics
-that relate to me, feel free to contact me via
-[email](mailto:ashish.panigrahi@niser.ac.in).
+I am happy to discuss and collaborate on related areas. Please feel free to contact
+me via [email](mailto:ashish.panigrahi@niser.ac.in).
 
-@@text-center-small
+### Publications
+
+Please refer to my [Google Scholar profile](https://scholar.google.com/citations?user=SmwWY04AAAAJ&hl=en&authuser=1) for an up-to-date list of publications.
+
+<!-- @@text-center-small
 Views presented are my own and **do not** portray the idealogy of the organization I
 represent.
-@@
+@@ -->
 
 @@front-heading
 ## [Blog](/blog/)
