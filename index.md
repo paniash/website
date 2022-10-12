@@ -15,9 +15,8 @@ investigating quantum interaction between light and matter in solid-state device
 The goal is to study photonic nanostructures to create hardware for applications in
 quantum technologies.
 
-I am currently working in [Dr. Shovon Pal's
-group](https://palshovon.wixsite.com/uthd) on the investigation of quantum optical
-phenomena using semiconductor quantum dots. I did my [Bachelors
+I am currently working on the manipulation of nuclear spins in
+cryogenically cooled GaAs quantum dots for my masters thesis. I did my [Bachelors
 thesis](assets/files/thesis.pdf) with [Dr. Kartik
 Senapati](https://www.niser.ac.in/users/kartik#profile-main)'s group on spin Hall
 effect in NM/HM trilayer systems in spring 2021 during which I became an [IBM Qiskit
