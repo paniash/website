@@ -26,9 +26,9 @@ advocate](https://qiskit.org/advocates/). You can find my full CV
 I am happy to discuss and collaborate on related areas. Please feel free to contact
 me via [email](mailto:ashish.panigrahi@niser.ac.in).
 
-### Publications
+<!-- ### Publications
 
-Please refer to my [Google Scholar profile](https://scholar.google.com/citations?user=SmwWY04AAAAJ&hl=en&authuser=1) for an up-to-date list of publications.
+Please refer to my [Google Scholar profile](https://scholar.google.com/citations?user=SmwWY04AAAAJ&hl=en&authuser=1) for an up-to-date list of publications. -->
 
 <!-- @@text-center-small
 Views presented are my own and **do not** portray the idealogy of the organization I
